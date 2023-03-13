@@ -15,4 +15,10 @@ export const GlobalStyle = createGlobalStyle`
 		margin: 0;
 		font-size: 1rem;
 	}
+
+	.landing_page {
+		display: flex;
+		justify-content: center;
+		gap: 5rem
+	}
 `;

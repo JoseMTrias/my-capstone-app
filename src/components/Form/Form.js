@@ -1,11 +1,11 @@
 // import React from 'react';
-import StyledForm from './styled';
 
+import StyledForm from './styled';
 export default function Form() {
 	return (
-		<StyledForm action="/send-data-here" method="post">
+		<StyledForm action="/result" method="post">
 			<label htmlFor="instrument">Instrument:</label>
-			<select id="cars" name="cars">
+			<select className="select" id="instruments" name="instruments">
 				<option value="all_instruments">All</option>
 				<option value="guitar">Guitar</option>
 				<option value="bass">Bass</option>

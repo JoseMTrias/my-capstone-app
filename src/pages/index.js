@@ -18,8 +18,12 @@ export default function HomePage() {
 				nascetur ridiculus mus. Donec quam felis,
 			</p>
 			<section className="landing_page">
-				<Link href="/search">Search</Link>
-				<Link href="/offer">Offer</Link>
+				<Link href="/search">
+					<button type="button">Search</button>
+				</Link>
+				<Link href="/offer">
+					<button type="button">Offer</button>
+				</Link>
 			</section>
 			<br />
 		</>

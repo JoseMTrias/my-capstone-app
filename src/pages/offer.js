@@ -1,13 +1,15 @@
 import Head from 'next/head';
 
-export default function AboutPage() {
+// import Layout from '../components/Layout/Layout';
+
+export default function OfferPage() {
 	return (
 		<>
 			<Head>
-				<title key="title">About</title>
-				<meta key="description" name="description" content="About" />
+				<title key="title">Offer</title>
+				<meta key="description" name="description" content="Offer" />
 			</Head>
-			<h2>About</h2>
+			<h2>Offer</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
 				dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,

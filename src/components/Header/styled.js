@@ -14,11 +14,11 @@ const StyledHeader = styled.header`
 	width: 100%;
 
 	&:hover {
-		background: #d8b;
+		background: lightgray;
 	}
 
 	&:active {
-		background: #bad;
+		background: lightgray;
 	}
 `;
 

@@ -11,6 +11,11 @@ export default function HomePage() {
 				<meta key="description" name="description" content="This is my project" />
 			</Head>
 			<h1>Home</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+				dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+				nascetur ridiculus mus. Donec quam felis,
+			</p>
 			<section>
 				<Button>Search</Button>
 				<Button>Offer</Button>

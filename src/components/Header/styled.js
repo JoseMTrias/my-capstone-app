@@ -2,14 +2,16 @@ import styled from 'styled-components';
 
 import {pxToRem} from '../../utils/unit';
 
-const StyledButton = styled.button`
+const StyledHeader = styled.header`
 	padding: 0.5em 1em;
 	border: 1px solid rgba(0, 0, 0, 0.3);
 	border-radius: ${pxToRem(4)};
 	background: lightgray;
 	color: #000;
 	font-size: 1em;
-	margin: 5px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 
 	&:hover {
 		background: #d8b;
@@ -20,4 +22,4 @@ const StyledButton = styled.button`
 	}
 `;
 
-export default StyledButton;
+export default StyledHeader;

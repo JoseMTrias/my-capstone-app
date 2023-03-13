@@ -1,8 +1,9 @@
 // import React from 'react';
+import StyledForm from './styled';
 
 export default function Form() {
 	return (
-		<form action="/send-data-here" method="post">
+		<StyledForm action="/send-data-here" method="post">
 			<label htmlFor="instrument">Instrument:</label>
 			<select id="cars" name="cars">
 				<option value="all_instruments">All</option>
@@ -25,6 +26,6 @@ export default function Form() {
 			<label htmlFor="location">Location:</label>
 			<input type="text" id="location" name="location"></input>
 			<button type="submit">Search</button>
-		</form>
+		</StyledForm>
 	);
 }

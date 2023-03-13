@@ -1,6 +1,7 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
-import Button from '../components/Button';
+// import Button from '../components/Button';
 import Layout from '../components/Layout/Layout';
 
 export default function HomePage() {
@@ -16,9 +17,9 @@ export default function HomePage() {
 				dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
 				nascetur ridiculus mus. Donec quam felis,
 			</p>
-			<section>
-				<Button>Search</Button>
-				<Button>Offer</Button>
+			<section className="landing_page">
+				<Link href="/Search">Search</Link>
+				<Link href="/Offer">Offer</Link>
 			</section>
 			<br />
 		</Layout>

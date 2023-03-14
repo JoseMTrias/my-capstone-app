@@ -8,14 +8,14 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	html {
+		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16px;
-		font-family: Arial, Helvetica, sans-serif
 	}
 
 	body {
 		margin: 0;
-		font-size: 1rem;
 		border-left: 10px;
+		font-size: 1rem;
 	}
 
 

@@ -17,7 +17,7 @@ export default function Form() {
 			location,
 		});
 
-		const response = await fetch('/api/announces');
+		const response = await fetch('/api/announcements');
 		const allAnnouncements = await response.json();
 		setAnnouncements(allAnnouncements);
 	};

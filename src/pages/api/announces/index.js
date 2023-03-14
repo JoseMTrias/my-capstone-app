@@ -1,19 +1,16 @@
-// import dbConnect from "../../../db/connect";
-// import Joke from "../../../db/models/Joke";
+import dbConnect from '../../../backend/connect';
+import Announce from '../../../backend/models/Announce';
 
-export default async function handler(request, response) {
-	//   await dbConnect();
-
-	//   if (request.method === "GET") {
-	//     // get all the jokes from the db
-	//     const jokes = await Joke.find();
-	//     console.log(jokes)
-	//     return response.status(200).json(jokes);
-	//   }
+export default async function handler(request) {
+	await dbConnect();
 
 	if (request.method === 'POST') {
-		console.log(request.body);
-		console.log(response);
+		console.log('post as: ', request.body);
+		//get all announcements
+		const announces = await Announce.find();
+		//once you have the announcements filter through depending on the info from the form
+		console.log('announces: ', announces);
+		// return that data to the frontend
 	}
 }
 

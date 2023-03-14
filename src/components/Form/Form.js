@@ -5,7 +5,7 @@ import useSWR from 'swr';
 import StyledForm from './styled';
 
 export default function Form() {
-	const announces = useSWR('/api');
+	const announces = useSWR('/api/announces');
 
 	const handleSubmit = async event => {
 		event.preventDefault();
@@ -20,7 +20,7 @@ export default function Form() {
 		};
 		console.log(formData);
 
-		const response = await fetch('/api', {
+		const response = await fetch('/api/announces', {
 			method: 'POST',
 			body: JSON.stringify(formData),
 			headers: {

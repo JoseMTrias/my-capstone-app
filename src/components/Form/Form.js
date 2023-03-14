@@ -1,11 +1,42 @@
 // import React from 'react';
+// import {useState} from 'react';
+import useSWR from 'swr';
 
 import StyledForm from './styled';
+
 export default function Form() {
+	const announces = useSWR('/api');
+
+	const handleSubmit = async event => {
+		event.preventDefault();
+
+		const instrument = event.target.instrument.value;
+		const genre = event.target.genre.value;
+		const location = event.target.location.value;
+		const formData = {
+			instrument,
+			genre,
+			location,
+		};
+		console.log(formData);
+
+		const response = await fetch('/api', {
+			method: 'POST',
+			body: JSON.stringify(formData),
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		});
+		if (response.ok) {
+			await response.json();
+			announces.mutate();
+			event.target.reset();
+		}
+	};
 	return (
-		<StyledForm action="/result" method="post">
+		<StyledForm onSubmit={handleSubmit} action="/result" method="post">
 			<label htmlFor="instrument">Instrument:</label>
-			<select className="select" id="instruments" name="instruments">
+			<select className="select" id="instrument" name="instrument">
 				<option value="all_instruments">All</option>
 				<option value="guitar">Guitar</option>
 				<option value="bass">Bass</option>

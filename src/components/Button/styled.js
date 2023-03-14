@@ -8,8 +8,8 @@ const StyledButton = styled.button`
 	border-radius: ${pxToRem(4)};
 	background: lightgray;
 	color: #000;
-	font-size: 1em;
 	margin: 5px;
+	font-size: 1em;
 
 	&:hover {
 		background: #d8b;

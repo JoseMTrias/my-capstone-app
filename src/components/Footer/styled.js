@@ -8,11 +8,11 @@ const StyledFooter = styled.footer`
 	border-radius: ${pxToRem(4)};
 	background: lightgray;
 	color: #000;
-	font-size: 1em;
 	display: flex;
+	font-size: 1em;
 	justify-content: right;
-	width: 100%;
 	position: fixed;
+	width: 100%;
 	bottom: 0;
 	&:hover {
 		background: #d8b;

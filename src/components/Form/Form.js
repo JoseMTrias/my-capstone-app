@@ -1,5 +1,7 @@
 import {useState} from 'react';
 
+import Card from '../Card/Card';
+
 import StyledForm from './styled';
 
 export default function Form() {
@@ -53,7 +55,8 @@ export default function Form() {
 					announcement.genre === formInfo.genre ||
 					announcement.location === formInfo.location
 				) {
-					return <p key={announcement._id}>trial</p>;
+					// return <p key={announcement._id}>trial</p>;
+					return <Card key={announcement._id}></Card>;
 				}
 			})}
 		</>

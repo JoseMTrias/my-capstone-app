@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const {Schema} = mongoose;
 
-const announceSchema = new Schema({
+const announcementSchema = new Schema({
 	title: {type: String},
 	date: {type: String},
 	instrument: {type: String},
@@ -12,6 +12,6 @@ const announceSchema = new Schema({
 	description: {type: String},
 });
 
-const Announce = mongoose.models.Announce || mongoose.model('Announce', announceSchema);
+const Announcement = mongoose.models.Announce || mongoose.model('Announce', announcementSchema);
 
-export default Announce;
+export default Announcement;

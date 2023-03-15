@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {pxToRem} from '../../utils/unit';
 
 const StyledFooter = styled.footer`
-	padding: 0.5em 1em;
+	padding: 0.5em 0.5em;
 	border: 1px solid rgba(0, 0, 0, 0.3);
 	border-radius: ${pxToRem(4)};
 	background: lightgray;

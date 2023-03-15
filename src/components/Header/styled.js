@@ -12,6 +12,8 @@ const StyledHeader = styled.header`
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	position: fixed;
+	top: 0;
 
 	&:hover {
 		background: lightgray;

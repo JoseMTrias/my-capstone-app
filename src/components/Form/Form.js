@@ -56,7 +56,18 @@ export default function Form() {
 					announcement.location === formInfo.location
 				) {
 					// return <p key={announcement._id}>trial</p>;
-					return <Card key={announcement._id}></Card>;
+					return (
+						<Card
+							key={announcement._id}
+							title={announcement.title}
+							date={announcement.date}
+							instrument={announcement.instrument}
+							genre={announcement.genre}
+							location={announcement.location}
+							user={announcement.user}
+							description={announcement.description}
+						></Card>
+					);
 				}
 			})}
 		</>

@@ -12,6 +12,8 @@ const StyledHeader = styled.header`
 	font-size: 1em;
 	justify-content: space-between;
 	width: 100%;
+	position: fixed;
+	top: 0;
 
 	&:hover {
 		background: lightgray;

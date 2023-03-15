@@ -2,12 +2,12 @@ import Link from 'next/link';
 
 import StyledCard from './styled';
 
-export default function Card({title}) {
+export default function Card({title, id}) {
 	return (
 		<StyledCard>
 			<ul>
 				<li>
-					<Link href="">{title}</Link>
+					<Link href={`/announcements/${id}`}>{title}</Link>
 				</li>
 			</ul>
 			{/* <p>Date: {date}</p>

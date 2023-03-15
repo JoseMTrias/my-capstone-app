@@ -59,6 +59,7 @@ export default function Form() {
 						<Card
 							key={announcement._id}
 							title={announcement.title}
+							id={announcement._id}
 							// date={announcement.date}
 							// instrument={announcement.instrument}
 							// genre={announcement.genre}
@@ -77,6 +78,8 @@ export default function Form() {
 							<Card
 								key={announcement._id}
 								title={announcement.title}
+								id={announcement._id}
+
 								// date={announcement.date}
 								// instrument={announcement.instrument}
 								// genre={announcement.genre}

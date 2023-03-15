@@ -8,7 +8,6 @@ export default async function handler(request, response) {
 
 	if (request.method === 'GET') {
 		const announcement = await Announcement.findById(id);
-
 		if (!announcement) {
 			return response.status(404).json({status: 'Not Found'});
 		}

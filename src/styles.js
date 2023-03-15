@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
 	html {
 		font-size: 16px;
-		font-family: Arial, Helvetica, sans-serif
+		font-family: Arial, Helvetica, sans-serif;
 	}
 
 	body {
@@ -18,11 +18,15 @@ export const GlobalStyle = createGlobalStyle`
 		font-size: 1rem;
 		border-left: 10px;
 	}
-
+	main {
+		padding: 1em;
+	}
 
 	.landing_page {
 		display: flex;
 		justify-content: center;
-		gap: 5rem
+		gap: 5rem;
+		padding-top: 1em;
+		
 	}
 `;

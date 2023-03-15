@@ -55,7 +55,6 @@ export default function Form() {
 					announcement.genre === formInfo.genre ||
 					announcement.location === formInfo.location
 				) {
-					// return <p key={announcement._id}>trial</p>;
 					return (
 						<Card
 							key={announcement._id}

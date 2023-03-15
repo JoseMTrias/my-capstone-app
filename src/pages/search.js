@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 import Form from '../components/Form/Form';
 
@@ -11,7 +12,9 @@ export default function SearchPage() {
 				<title key="title">Search</title>
 				<meta key="description" name="description" content="Search" />
 			</Head>
-			<h2>Search</h2>
+			<Link href="/search">
+				<h2>Search</h2>
+			</Link>
 			<Form></Form>
 		</>
 	);

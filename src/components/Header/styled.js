@@ -8,8 +8,8 @@ const StyledHeader = styled.header`
 	border-radius: ${pxToRem(4)};
 	background: lightgray;
 	color: #000;
-	font-size: 1em;
 	display: flex;
+	font-size: 1em;
 	justify-content: space-between;
 	width: 100%;
 	position: fixed;

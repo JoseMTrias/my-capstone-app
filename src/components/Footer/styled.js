@@ -14,6 +14,7 @@ const StyledFooter = styled.footer`
 	width: 100%;
 	position: fixed;
 	bottom: 0;
+	width: 100%;
 	&:hover {
 		background: #d8b;
 	}

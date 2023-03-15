@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 const StyledForm = styled.form`
 	display: flex;
-	justify-content: space-between;
 	flex-direction: column;
-	align-content: center;
+	justify-content: space-between;
 	flex-wrap: wrap;
+	align-content: center;
 	align-items: stretch;
 	gap: 0.5rem;
 `;

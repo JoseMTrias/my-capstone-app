@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	html {
+		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16px;
 		font-family: Arial, Helvetica, sans-serif;
 	}
@@ -17,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
 		padding-top: 5em;
 		font-size: 1rem;
 		border-left: 10px;
+		font-size: 1rem;
 	}
 	main {
 		padding: 1em;

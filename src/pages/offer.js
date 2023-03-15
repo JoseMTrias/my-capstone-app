@@ -10,7 +10,7 @@ export default function OfferPage() {
 				<title key="title">Offer</title>
 				<meta key="description" name="description" content="Offer" />
 			</Head>
-			<h2>Offer</h2>
+			<h2>Create Announcement</h2>
 			<CreateForm></CreateForm>
 		</>
 	);

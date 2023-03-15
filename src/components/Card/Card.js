@@ -1,17 +1,23 @@
+import Link from 'next/link';
+
 import StyledCard from './styled';
 
-export default function Card({title, date, instrument, genre, location, user, description}) {
+export default function Card({title}) {
 	return (
 		<StyledCard>
-			<p>Title: {title}</p>
-			<p>Date: {date}</p>
+			<ul>
+				<li>
+					<Link href="">{title}</Link>
+				</li>
+			</ul>
+			{/* <p>Date: {date}</p>
 			<p>
 				Instrument / Genre: {instrument} / {genre}
 			</p>
 			<p>Location: {location}</p>
 			<p>User: {user}</p>
 			<p>Description:</p>
-			<p>{description}</p>
+			<p>{description}</p> */}
 		</StyledCard>
 	);
 }

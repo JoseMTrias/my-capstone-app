@@ -1,7 +1,46 @@
+import {useRouter} from 'next/router';
+
 export default function CreateForm() {
+	const router = useRouter();
+
+	async function handleSubmit(event) {
+		event.preventDefault();
+		const formElements = event.target;
+		const title = formElements.title.value;
+		const date = formElements.date.value;
+		const instrument = formElements.instrument.value;
+		const genre = formElements.genre.value;
+		const location = formElements.location.value;
+		const user = formElements.user.value;
+		const description = formElements.description.value;
+
+		const newAnnouncement = {
+			title: title,
+			date: date,
+			instrument: instrument,
+			genre: genre,
+			location: location,
+			user: user,
+			description: description,
+		};
+		const response = await fetch('/api/announcements', {
+			method: 'POST',
+			body: JSON.stringify(newAnnouncement),
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		});
+		if (response.ok) {
+			await response.json();
+		} else {
+			console.error(`Error: ${response.status}`);
+		}
+		router.push('/');
+	}
+
 	return (
 		<>
-			<form>
+			<form onSubmit={handleSubmit}>
 				<label>
 					Title:
 					<input type="text" name="title" />
@@ -32,7 +71,7 @@ export default function CreateForm() {
 					<input type="text" name="user" />
 				</label>
 				<p>Description:</p>
-				<textarea></textarea>
+				<textarea type="text" name="description"></textarea>
 				<br></br>
 				<input type="submit" value="Create" />
 			</form>

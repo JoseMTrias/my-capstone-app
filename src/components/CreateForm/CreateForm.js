@@ -4,10 +4,21 @@ export default function CreateForm() {
 	const router = useRouter();
 
 	async function handleSubmit(event) {
+		function dateSetter() {
+			const date = new Date();
+
+			let day = date.getDate();
+			let month = date.getMonth() + 1;
+			let year = date.getFullYear();
+
+			let currentDate = `${day}-${month}-${year}`;
+
+			return currentDate;
+		}
 		event.preventDefault();
 		const formElements = event.target;
 		const title = formElements.title.value;
-		const date = formElements.date.value;
+		const date = dateSetter();
 		const instrument = formElements.instrument.value;
 		const genre = formElements.genre.value;
 		const location = formElements.location.value;
@@ -45,11 +56,6 @@ export default function CreateForm() {
 				<label>
 					Title:
 					<input type="text" name="title" />
-				</label>
-				<br></br>
-				<label>
-					Date:
-					<input type="text" name="date" />
 				</label>
 				<br></br>
 				<label>

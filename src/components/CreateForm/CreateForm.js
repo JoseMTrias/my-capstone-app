@@ -32,6 +32,7 @@ export default function CreateForm() {
 		});
 		if (response.ok) {
 			await response.json();
+			alert('Announcement succesfully created! You will be redirected to Home');
 		} else {
 			console.error(`Error: ${response.status}`);
 		}

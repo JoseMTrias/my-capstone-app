@@ -49,26 +49,44 @@ export default function Form() {
 				<input type="text" id="location" name="location"></input>
 				<button type="submit">Search</button>
 			</StyledForm>
-			{announcements.map(announcement => {
-				if (
-					announcement.instrument === formInfo.instrument ||
-					announcement.genre === formInfo.genre ||
-					announcement.location === formInfo.location
-				) {
-					return (
-						<Card
-							key={announcement._id}
-							title={announcement.title}
-							date={announcement.date}
-							instrument={announcement.instrument}
-							genre={announcement.genre}
-							location={announcement.location}
-							user={announcement.user}
-							description={announcement.description}
-						></Card>
-					);
-				}
-			})}
+			{formInfo.instrument != 'All' &&
+				announcements.map(announcement => {
+					if (
+						announcement.instrument === formInfo.instrument ||
+						announcement.genre === formInfo.genre ||
+						announcement.location === formInfo.location
+					) {
+						return (
+							<Card
+								key={announcement._id}
+								title={announcement.title}
+								date={announcement.date}
+								instrument={announcement.instrument}
+								genre={announcement.genre}
+								location={announcement.location}
+								user={announcement.user}
+								description={announcement.description}
+							></Card>
+						);
+					}
+				})}
+			{(formInfo.instrument === 'All' || formInfo.genre === 'All') &&
+				announcements.map(announcement => {
+					{
+						return (
+							<Card
+								key={announcement._id}
+								title={announcement.title}
+								date={announcement.date}
+								instrument={announcement.instrument}
+								genre={announcement.genre}
+								location={announcement.location}
+								user={announcement.user}
+								description={announcement.description}
+							></Card>
+						);
+					}
+				})}
 		</>
 	);
 }

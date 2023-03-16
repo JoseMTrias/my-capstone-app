@@ -21,7 +21,7 @@ export default function AnnouncementDetailPage() {
 		await fetch(`/api/announcements/${id}`, {
 			method: 'DELETE',
 		});
-		router.push('/');
+		router.push('/search');
 	}
 
 	return (

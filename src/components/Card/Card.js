@@ -22,7 +22,11 @@ export default function Card({
 			<p>{instrument}</p>
 			<p>{location}</p>
 			<p>{user}</p>
-			<Button onClick={onDelete}>Delete</Button>
+			<div className="buttons">
+				<Button onClick={onDelete} deleteButton="button_delete">
+					Delete
+				</Button>
+			</div>
 		</StyledCard>
 	);
 }

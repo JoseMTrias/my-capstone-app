@@ -16,7 +16,7 @@ export default function AnnouncementDetailPage() {
 		};
 		fetchData().catch(console.error);
 	}, [id]);
-	console.log(announcementDetail);
+	// console.log(announcementDetail);
 	return (
 		<div>
 			<h3>Announcement Profile:</h3>

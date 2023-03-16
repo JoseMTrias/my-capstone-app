@@ -46,13 +46,13 @@ export default function Form() {
 					<option value="Classical">Classical</option>
 				</select>
 				<label htmlFor="Location">Location:</label>
-				<input type="text" id="location" name="location"></input>
+				<input type="text" id="location" name="location" required></input>
 				<button type="submit">Search</button>
 			</StyledForm>
 			{announcements.map(announcement => {
 				if (
-					announcement.instrument === formInfo.instrument ||
-					announcement.genre === formInfo.genre ||
+					announcement.instrument === formInfo.instrument &&
+					announcement.genre === formInfo.genre &&
 					announcement.location === formInfo.location
 				) {
 					return (

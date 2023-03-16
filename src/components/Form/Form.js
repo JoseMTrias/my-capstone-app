@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-import Card from '../Card/Card';
+import Board from '../Board/Board';
 
 import StyledForm from './styled';
 
@@ -56,16 +56,17 @@ export default function Form() {
 					announcement.location === formInfo.location
 				) {
 					return (
-						<Card
+						<Board
 							key={announcement._id}
 							title={announcement.title}
-							date={announcement.date}
-							instrument={announcement.instrument}
-							genre={announcement.genre}
-							location={announcement.location}
-							user={announcement.user}
-							description={announcement.description}
-						></Card>
+							id={announcement._id}
+							// date={announcement.date}
+							// instrument={announcement.instrument}
+							// genre={announcement.genre}
+							// location={announcement.location}
+							// user={announcement.user}
+							// description={announcement.description}
+						></Board>
 					);
 				}
 			})}
@@ -74,16 +75,18 @@ export default function Form() {
 				announcements.map(announcement => {
 					{
 						return (
-							<Card
+							<Board
 								key={announcement._id}
 								title={announcement.title}
-								date={announcement.date}
-								instrument={announcement.instrument}
-								genre={announcement.genre}
-								location={announcement.location}
-								user={announcement.user}
-								description={announcement.description}
-							></Card>
+								id={announcement._id}
+
+								// date={announcement.date}
+								// instrument={announcement.instrument}
+								// genre={announcement.genre}
+								// location={announcement.location}
+								// user={announcement.user}
+								// description={announcement.description}
+							></Board>
 						);
 					}
 				})}

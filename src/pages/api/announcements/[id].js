@@ -13,4 +13,9 @@ export default async function handler(request, response) {
 		}
 		response.status(200).json(announcement);
 	}
+
+	if (request.method === 'DELETE') {
+		const announcementToDelete = await Announcement.findByIdAndDelete(id);
+		return response.status(200).json(announcementToDelete);
+	}
 }

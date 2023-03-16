@@ -11,6 +11,9 @@ const StyledButton = styled.button`
 	color: #000;
 	font-size: 1em;
 
+	&.button_delete {
+		font-size: small;
+	}
 	&:hover {
 		background: #d8b;
 	}

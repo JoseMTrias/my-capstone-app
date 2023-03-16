@@ -16,7 +16,14 @@ export default function AnnouncementDetailPage() {
 		};
 		fetchData().catch(console.error);
 	}, [id]);
-	// console.log(announcementDetail);
+
+	async function handleDeleteAnnouncement() {
+		await fetch(`/api/announcements/${id}`, {
+			method: 'DELETE',
+		});
+		router.push('/search');
+	}
+
 	return (
 		<div>
 			<h3>Announcement Profile:</h3>
@@ -29,6 +36,7 @@ export default function AnnouncementDetailPage() {
 				location={announcementDetail.location}
 				title={announcementDetail.title}
 				user={announcementDetail.user}
+				onDelete={handleDeleteAnnouncement}
 			></Card>
 		</div>
 	);

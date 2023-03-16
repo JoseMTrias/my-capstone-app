@@ -1,6 +1,17 @@
+import Button from '../Button';
+
 import StyledCard from './styled';
 
-export default function Card({date, description, genre, instrument, location, title, user}) {
+export default function Card({
+	date,
+	description,
+	genre,
+	instrument,
+	location,
+	title,
+	user,
+	onDelete,
+}) {
 	return (
 		<StyledCard>
 			{/* <p>{id}</p> */}
@@ -11,6 +22,11 @@ export default function Card({date, description, genre, instrument, location, ti
 			<p>{instrument}</p>
 			<p>{location}</p>
 			<p>{user}</p>
+			<div className="buttons">
+				<Button onClick={onDelete} deleteButton="button_delete">
+					Delete
+				</Button>
+			</div>
 		</StyledCard>
 	);
 }

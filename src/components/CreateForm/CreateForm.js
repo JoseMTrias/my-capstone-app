@@ -43,7 +43,6 @@ export default function CreateForm() {
 		});
 		if (response.ok) {
 			const announcement = await response.json();
-			console.log(announcement);
 			router.push(`/announcements/${announcement._id}`);
 		} else {
 			console.error(`Error: ${response.status}`);

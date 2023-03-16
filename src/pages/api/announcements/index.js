@@ -12,8 +12,8 @@ export default async function handler(request, response) {
 		try {
 			const announcementData = request.body;
 			const announcement = new Announcement(announcementData);
-			await announcement.save();
-			return response.status(201).json({status: 'Announcement created.'});
+			const createdAnnouncement = await announcement.save();
+			return response.status(201).json(createdAnnouncement);
 		} catch (error) {
 			console.error(error);
 			return response.status(400).json({error: error.message});

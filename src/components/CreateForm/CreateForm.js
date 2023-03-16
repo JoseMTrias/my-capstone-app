@@ -42,12 +42,12 @@ export default function CreateForm() {
 			},
 		});
 		if (response.ok) {
-			await response.json();
-			alert('Announcement succesfully created! You will be redirected to Home');
+			const announcement = await response.json();
+			console.log(announcement);
+			router.push(`/announcements/${announcement._id}`);
 		} else {
 			console.error(`Error: ${response.status}`);
 		}
-		router.push('/');
 	}
 
 	return (

@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-import Card from '../Card/Card';
+import Board from '../Board/Board';
 
 import StyledForm from './styled';
 
@@ -56,7 +56,7 @@ export default function Form() {
 					announcement.location === formInfo.location
 				) {
 					return (
-						<Card
+						<Board
 							key={announcement._id}
 							title={announcement.title}
 							id={announcement._id}
@@ -66,7 +66,7 @@ export default function Form() {
 							// location={announcement.location}
 							// user={announcement.user}
 							// description={announcement.description}
-						></Card>
+						></Board>
 					);
 				}
 			})}
@@ -75,7 +75,7 @@ export default function Form() {
 				announcements.map(announcement => {
 					{
 						return (
-							<Card
+							<Board
 								key={announcement._id}
 								title={announcement.title}
 								id={announcement._id}
@@ -86,7 +86,7 @@ export default function Form() {
 								// location={announcement.location}
 								// user={announcement.user}
 								// description={announcement.description}
-							></Card>
+							></Board>
 						);
 					}
 				})}

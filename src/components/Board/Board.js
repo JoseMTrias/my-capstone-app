@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
-import StyledCard from './styled';
+import StyledBoard from './styled';
 
-export default function Card({title, id}) {
+export default function Board({title, id}) {
 	return (
-		<StyledCard>
+		<StyledBoard>
 			<ul>
 				<li>
 					<Link href={`/announcements/${id}`}>{title}</Link>
@@ -18,6 +18,6 @@ export default function Card({title, id}) {
 			<p>User: {user}</p>
 			<p>Description:</p>
 			<p>{description}</p> */}
-		</StyledCard>
+		</StyledBoard>
 	);
 }

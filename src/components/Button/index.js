@@ -7,9 +7,10 @@ import StyledButton from './styled';
  * @return {JSX.Element}
  * @constructor
  */
-export default function Button({children, type = 'button', ...props}) {
+export default function Button({test, children, type = 'button', ...props}) {
+	console.log(test);
 	return (
-		<StyledButton type={type} {...props}>
+		<StyledButton className={test} type={type} {...props}>
 			{children}
 		</StyledButton>
 	);

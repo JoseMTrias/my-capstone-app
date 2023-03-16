@@ -1,6 +1,7 @@
 import {useRouter} from 'next/router';
 import {useEffect, useState} from 'react';
 
+import Button from '../../components/Button';
 import Card from '../../components/Card/Card';
 export default function AnnouncementDetailPage() {
 	const [announcementDetail, setAnnouncementDetail] = useState([]);
@@ -30,6 +31,7 @@ export default function AnnouncementDetailPage() {
 				title={announcementDetail.title}
 				user={announcementDetail.user}
 			></Card>
+			<Button test="button_delete">Delete</Button>
 		</div>
 	);
 }

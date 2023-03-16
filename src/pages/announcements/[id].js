@@ -1,6 +1,7 @@
 import {useRouter} from 'next/router';
 import {useEffect, useState} from 'react';
 
+import Card from '../../components/Card/Card';
 export default function AnnouncementDetailPage() {
 	const [announcementDetail, setAnnouncementDetail] = useState([]);
 	const router = useRouter();
@@ -18,7 +19,17 @@ export default function AnnouncementDetailPage() {
 	console.log(announcementDetail);
 	return (
 		<div>
-			<p>{announcementDetail._id}</p>
+			<h3>Announcement Profile:</h3>
+			<Card
+				id={announcementDetail._id}
+				date={announcementDetail.date}
+				description={announcementDetail.description}
+				genre={announcementDetail.genre}
+				instrument={announcementDetail.instrument}
+				location={announcementDetail.location}
+				title={announcementDetail.title}
+				user={announcementDetail.user}
+			></Card>
 		</div>
 	);
 }

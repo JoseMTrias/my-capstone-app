@@ -46,7 +46,7 @@ export default function Form() {
 					<option value="Classical">Classical</option>
 				</select>
 				<label htmlFor="Location">Location:</label>
-				<input type="text" id="location" name="location" required></input>
+				<input type="text" id="location" name="location"></input>
 				<button type="submit">Search</button>
 			</StyledForm>
 			{announcements.map(announcement => {

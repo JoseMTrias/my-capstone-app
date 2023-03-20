@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import LoginButton from '../components/login-btn';
 
 export default function HomePage() {
 	return (
@@ -23,8 +22,7 @@ export default function HomePage() {
 					<button type="button">Offer</button>
 				</Link>
 			</section>
-			<br></br>
-				<LoginButton></LoginButton>
+			
 			<br />
 		</>
 	);

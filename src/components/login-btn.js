@@ -3,10 +3,12 @@ import { useSession, signIn, signOut } from "next-auth/react"
 export default function LoginButton() {
   const { data: session } = useSession()
   if (session) {
+    console.log(session)
     return (
       <>
-        Signed in as {session.user.email} <br />
+         
         <button onClick={() => signOut()}>Sign out</button>
+        <img src={session.user.image} style={{borderRadius: "50px", height: "40px", width: "40px"}}></img>
       </>
     )
   }

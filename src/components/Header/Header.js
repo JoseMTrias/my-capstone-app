@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import LoginButton from '../login-btn';
 
 import StyledHeader from './styled';
 
@@ -11,9 +12,7 @@ export default function Header() {
 				</Link>
 			</nav>
 			<nav>
-				<Link href="/about">
-					<h1>About</h1>
-				</Link>
+				<LoginButton></LoginButton>
 			</nav>
 		</StyledHeader>
 	);

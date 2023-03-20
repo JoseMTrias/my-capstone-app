@@ -1,38 +1,40 @@
 import {useRouter} from 'next/router';
 import {useEffect, useState} from 'react';
-import useSWRMutation from 'swr/mutation';
+// import useSWRMutation from 'swr/mutation';
 
 import Card from '../../components/Card/Card';
+import EditForm from '../../components/EditForm/EditForm';
 export default function AnnouncementDetailPage() {
 	const [announcementDetail, setAnnouncementDetail] = useState([]);
 	const router = useRouter();
 	const {id} = router.query;
-	const {push} = useRouter();
+	// const {push} = useRouter();
+	const [showForm, setShowForm] = useState(false);
 
-	async function updateAnnouncement(url, {arg}) {
-		const response = await fetch(url, {
-			method: 'PUT',
-			body: JSON.stringify(arg),
-			headers: {
-				'Content-Type': 'application/json',
-			},
-		});
-		if (response.ok) {
-			await response.json();
-		} else {
-			console.error(`Error: ${response.status}`);
-		}
-	}
+	// async function updateAnnouncement(url, {arg}) {
+	// 	const response = await fetch(url, {
+	// 		method: 'PUT',
+	// 		body: JSON.stringify(arg),
+	// 		headers: {
+	// 			'Content-Type': 'application/json',
+	// 		},
+	// 	});
+	// 	if (response.ok) {
+	// 		await response.json();
+	// 	} else {
+	// 		console.error(`Error: ${response.status}`);
+	// 	}
+	// }
 
-	const {trigger, isMutating} = useSWRMutation(`/api/announcements/${id}`, updateAnnouncement);
+	// const {trigger, isMutating} = useSWRMutation(`/api/announcements/${id}`, updateAnnouncement);
 
-	async function handleEditAnnouncement(event) {
-		event.preventDefault();
-		const announcement = new FormData(event.target);
-		const announcementData = Object.fromEntries(announcement);
-		await trigger(announcementData);
-		push('/search');
-	}
+	// async function handleEditAnnouncement(event) {
+	// 	event.preventDefault();
+	// 	const announcement = new FormData(event.target);
+	// 	const announcementData = Object.fromEntries(announcement);
+	// 	await trigger(announcementData);
+	// 	push('/search');
+	// }
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -50,7 +52,7 @@ export default function AnnouncementDetailPage() {
 		router.push('/search');
 	}
 
-	if (isMutating) return <p>Submitting changes</p>;
+	// if (isMutating) return <p>Submitting changes</p>;
 
 	return (
 		<div>
@@ -64,9 +66,12 @@ export default function AnnouncementDetailPage() {
 				location={announcementDetail.location}
 				title={announcementDetail.title}
 				user={announcementDetail.user}
-				onEdit={handleEditAnnouncement}
+				onEdit={() => setShowForm(!showForm)}
 				onDelete={handleDeleteAnnouncement}
 			></Card>
+			{showForm && <EditForm announcement={announcementDetail} />}
+			<br></br>
+			<br></br>
 		</div>
 	);
 }

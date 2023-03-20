@@ -8,6 +8,7 @@ const StyledForm = styled.form`
 	align-content: center;
 	align-items: stretch;
 	gap: 0.5rem;
+	margin-top: 0;
 `;
 
 export default StyledForm;

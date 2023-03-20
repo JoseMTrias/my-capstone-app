@@ -1,13 +1,11 @@
 import {useRouter} from 'next/router';
 import {useState} from 'react';
-import useSWR from 'swr';
 
 export default function EditForm({announcement}) {
 	const router = useRouter();
 	const [editAnnouncement, setEditAnnouncement] = useState(announcement);
-	const announcements = useSWR('/api/announcements');
-	console.log(setEditAnnouncement);
-	async function handleSubmit(event) {
+
+	async function handleEdit(event) {
 		const date = new Date();
 		let day = date.getDate();
 		let month = date.getMonth() + 1;
@@ -16,20 +14,17 @@ export default function EditForm({announcement}) {
 
 		event.preventDefault();
 
-		const formData = new FormData(event.target);
-		const announcementData = Object.fromEntries(formData);
+		console.log('announcementData: ', editAnnouncement);
 
-		const response = await fetch('api/announcements', {
-			method: 'POST',
-			body: JSON.stringify({...announcementData, date: currentDate}),
+		const response = await fetch(`/api/announcements/${editAnnouncement._id}`, {
+			method: 'PUT',
+			body: JSON.stringify({...editAnnouncement, date: currentDate}),
 			headers: {
 				'Content-Type': 'application/json',
 			},
 		});
-
 		if (response.ok) {
-			const announcement = await response.json();
-			announcements.mutate();
+			await response.json();
 			router.push(`/announcements/${announcement._id}`);
 		} else {
 			console.error(`Error: ${response.status}`);
@@ -38,39 +33,77 @@ export default function EditForm({announcement}) {
 
 	return (
 		<>
-			<form onSubmit={handleSubmit}>
+			<form onSubmit={handleEdit}>
 				<label>
 					Title:
-					<input type="text" name="title" value={editAnnouncement.title} />
+					<input
+						onChange={e =>
+							setEditAnnouncement({...editAnnouncement, title: e.target.value})
+						}
+						value={editAnnouncement.title}
+						type="text"
+						name="title"
+					/>
 				</label>
 				<br></br>
 				<label>
 					Instrument:
-					<input value={editAnnouncement.instrument} type="text" name="instrument" />
+					<input
+						onChange={e =>
+							setEditAnnouncement({...editAnnouncement, instrument: e.target.value})
+						}
+						value={editAnnouncement.instrument}
+						type="text"
+						name="instrument"
+					/>
 				</label>
 				<br></br>
 				<label>
 					Genre:
-					<input value={editAnnouncement.genre} type="text" name="genre" />
+					<input
+						onChange={e =>
+							setEditAnnouncement({...editAnnouncement, genre: e.target.value})
+						}
+						value={editAnnouncement.genre}
+						type="text"
+						name="genre"
+					/>
 				</label>
 				<br></br>
 				<label>
 					Location:
-					<input value={editAnnouncement.location} type="text" name="location" />
+					<input
+						onChange={e =>
+							setEditAnnouncement({...editAnnouncement, location: e.target.value})
+						}
+						value={editAnnouncement.location}
+						type="text"
+						name="location"
+					/>
 				</label>
 				<br></br>
 				<label>
 					User:
-					<input value={editAnnouncement.user} type="text" name="user" />
+					<input
+						onChange={e =>
+							setEditAnnouncement({...editAnnouncement, user: e.target.value})
+						}
+						value={editAnnouncement.user}
+						type="text"
+						name="user"
+					/>
 				</label>
 				<p>Description:</p>
 				<textarea
+					onChange={e =>
+						setEditAnnouncement({...editAnnouncement, description: e.target.value})
+					}
 					type="text"
 					name="description"
 					value={editAnnouncement.description}
 				></textarea>
 				<br></br>
-				<input type="submit" value="Create" />
+				<input type="submit" value="Update" />
 			</form>
 		</>
 	);

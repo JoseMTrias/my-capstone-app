@@ -3,7 +3,6 @@ import useSWR from 'swr';
 
 export default function CreateForm() {
 	const router = useRouter();
-
 	const announcements = useSWR('/api/announcements');
 
 	async function handleSubmit(event) {

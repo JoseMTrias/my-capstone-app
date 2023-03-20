@@ -11,7 +11,7 @@ export default function App({
 		<SessionProvider session={session}>
 			<Layout>
 				<GlobalStyle />
-				<Component {...pageProps} />
+				<Component {...pageProps} session={session} />
 			</Layout>
 		</SessionProvider>
 	

@@ -1,7 +1,12 @@
+import { useSession, signIn, signOut } from "next-auth/react"
+
 import Head from 'next/head';
 import Link from 'next/link';
 
 export default function HomePage() {
+	const { data: session } = useSession()
+	console.log(session)
+	
 	return (
 		<>
 			<Head>
@@ -18,9 +23,20 @@ export default function HomePage() {
 				<Link href="/search">
 					<button type="button">Search</button>
 				</Link>
-				<Link href="/offer">
+				{
+					session? <Link href="/offer"><button type="button">Offer</button></Link> : <Link href="/api/auth/signin"><button type="button">Offer</button></Link>
+				}
+				{/* <Link 
+				{
+					session? href="/offer" : href="/api/auth/signin"
+				}>
 					<button type="button">Offer</button>
-				</Link>
+				</Link> */}
+				{/* <Link href="/offer">
+					<button type="button">Offer</button>
+				</Link> */}
+				
+				
 			</section>
 			
 			<br />

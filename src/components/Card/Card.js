@@ -10,6 +10,7 @@ export default function Card({
 	location,
 	title,
 	user,
+	onEdit,
 	onDelete,
 }) {
 	return (
@@ -23,6 +24,7 @@ export default function Card({
 			<p>{location}</p>
 			<p>{user}</p>
 			<div className="buttons">
+				<Button onClick={onEdit}>Edit</Button>
 				<Button onClick={onDelete} deleteButton="button_delete">
 					Delete
 				</Button>

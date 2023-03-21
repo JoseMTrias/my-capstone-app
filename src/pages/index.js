@@ -5,7 +5,6 @@ import Link from 'next/link';
 
 export default function HomePage() {
 	const { data: session } = useSession()
-	console.log(session)
 	
 	return (
 		<>
@@ -26,17 +25,6 @@ export default function HomePage() {
 				{
 					session? <Link href="/offer"><button type="button">Offer</button></Link> : <Link href="/api/auth/signin"><button type="button">Offer</button></Link>
 				}
-				{/* <Link 
-				{
-					session? href="/offer" : href="/api/auth/signin"
-				}>
-					<button type="button">Offer</button>
-				</Link> */}
-				{/* <Link href="/offer">
-					<button type="button">Offer</button>
-				</Link> */}
-				
-				
 			</section>
 			
 			<br />

@@ -15,6 +15,8 @@ const StyledFooter = styled.footer`
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+	-webkit-box-shadow: 5px 5px 15px 5px #000000; 
+box-shadow: 5px 5px 15px 5px #000000;
 	&:hover {
 		/* background: #d8b; */
 	}

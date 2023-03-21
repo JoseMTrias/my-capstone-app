@@ -9,6 +9,9 @@ const StyledForm = styled.form`
 	align-items: stretch;
 	gap: 0.5rem;
 	margin-top: 0;
+	box-shadow: 5px 5px 15px 5px #444554;
+	padding: 50px 0 50px 0;
+
 `;
 
 export default StyledForm;

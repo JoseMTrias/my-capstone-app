@@ -16,6 +16,8 @@ const StyledHeader = styled.header`
 	height: 50px;
 	position: fixed;
 	top: 0;
+box-shadow: 0px 10px 13px -7px #000000, 2px 5px 3px -3px rgba(0,0,0,0);
+	
 
 	&:hover {
 		/* background: lightgray; */

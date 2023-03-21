@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16px;
 		font-family: Arial, Helvetica, sans-serif;
+
 	}
 
 	body {
@@ -22,9 +23,11 @@ export const GlobalStyle = createGlobalStyle`
 		color: #FFFD82;
 		background-color: #7F7B82;
 
+
 	}
 	main {
 		padding: 1em;
+
 	}
 
 	.landing_page {
@@ -32,6 +35,7 @@ export const GlobalStyle = createGlobalStyle`
 		justify-content: center;
 		gap: 5rem;
 		padding-top: 1em;
+		
 		
 	}
 	a {

@@ -4,9 +4,6 @@ import {useState} from 'react';
 export default function EditForm({announcement}) {
 	const router = useRouter();
 	const [editAnnouncement, setEditAnnouncement] = useState(announcement);
-	// useEffect(()=> {
-
-	// })
 
 	async function handleEdit() {
 		const date = new Date();
@@ -14,8 +11,6 @@ export default function EditForm({announcement}) {
 		let month = date.getMonth() + 1;
 		let year = date.getFullYear();
 		let currentDate = `${year}-${month}-${day}`;
-
-		console.log('announcementData: ', editAnnouncement);
 
 		const response = await fetch(`/api/announcements/${editAnnouncement._id}`, {
 			method: 'PUT',

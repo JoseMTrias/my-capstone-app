@@ -35,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
 	align-content: center;
 	gap: 0.5rem;
 	margin: 50px;
-	padding: 50px 0 50px 0;
+	padding: 0px 0 20px 0;
 	font-family: Helvetica;
 
 	}

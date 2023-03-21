@@ -17,6 +17,7 @@ const StyledForm = styled.form`
 		margin-top: 20px;
 		width: 120px;
 		height: 25px;
+		font-size: small;
 	}
 `;
 

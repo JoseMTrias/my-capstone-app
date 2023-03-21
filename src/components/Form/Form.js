@@ -47,7 +47,7 @@ export default function Form() {
 				</select>
 				<label htmlFor="Location">Location:</label>
 				<input type="text" id="location" name="location"></input>
-				<Button type="submit" className="search-button">Search</Button>
+				<Button type="submit" className="search-button">search</Button>
 			</StyledForm>
 			{announcements.map(announcement => {
 				if (

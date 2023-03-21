@@ -10,11 +10,17 @@ const StyledCard = styled.article`
 	
 	.buttons {
 		display: flex;
-		justify-content: end;
-		font-size: medium;
-		margin-top: 20px;
+    flex-direction: row;
+    justify-content: flex-end;
 		
 	}
 `;
 
 export default StyledCard;
+
+
+// background-color: #93A8AC;
+// 		margin-top: 20px;
+// 		width: 120px;
+// 		height: 25px;
+// 		font-size: small;

@@ -1,5 +1,5 @@
 import Button from '../Button';
-
+import StyledButton from '../Button/styled';
 import StyledCard from './styled';
 
 export default function Card({
@@ -22,8 +22,8 @@ export default function Card({
 			<p>Instrument: {instrument}</p>
 			<p>Location: {location}</p>
 			<p>User: {user}</p>
-			<div className="buttons">
-				<Button onClick={onEdit}>Edit</Button>
+			<div className='buttons'>
+				<StyledButton className='button_edit' onClick={onEdit} >Edit</StyledButton>
 				<Button onClick={onDelete} deleteButton="button_delete">
 					Delete
 				</Button>

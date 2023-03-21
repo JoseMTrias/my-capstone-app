@@ -1,5 +1,7 @@
 import {useRouter} from 'next/router';
 import {useState} from 'react';
+import Button from '../Button';
+import StyledButton from '../Button/styled';
 
 export default function EditForm({announcement}) {
 	const router = useRouter();
@@ -99,7 +101,7 @@ export default function EditForm({announcement}) {
 					value={editAnnouncement.description}
 				></textarea>
 				<br></br>
-				<input type="submit" value="Update" />
+				<StyledButton type="submit" value="Update" >Update</StyledButton>
 			</form>
 		</>
 	);

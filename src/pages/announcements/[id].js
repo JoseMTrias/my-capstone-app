@@ -22,7 +22,7 @@ export default function AnnouncementDetailPage() {
 		await fetch(`/api/announcements/${id}`, {
 			method: 'DELETE',
 		});
-		router.push('/search');
+		router.push('/');
 	}
 
 	return (

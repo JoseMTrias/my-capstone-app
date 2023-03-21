@@ -15,7 +15,6 @@ export default function Card({
 }) {
 	return (
 		<StyledCard>
-			{/* <p>{id}</p> */}
 			<p>{title}</p>
 			<p>{date}</p>
 			<p>{description}</p>

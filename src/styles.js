@@ -19,6 +19,9 @@ export const GlobalStyle = createGlobalStyle`
 		font-size: 1rem;
 		border-left: 10px;
 		font-size: 1rem;
+		color: #FFFD82;
+		background-color: #7F7B82;
+
 	}
 	main {
 		padding: 1em;
@@ -30,5 +33,9 @@ export const GlobalStyle = createGlobalStyle`
 		gap: 5rem;
 		padding-top: 1em;
 		
+	}
+	a {
+		color: #FFFD82;
+		text-decoration: line
 	}
 `;

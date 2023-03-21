@@ -15,13 +15,13 @@ export default function Card({
 }) {
 	return (
 		<StyledCard>
-			<p>{title}</p>
-			<p>{date}</p>
-			<p>{description}</p>
-			<p>{genre}</p>
-			<p>{instrument}</p>
-			<p>{location}</p>
-			<p>{user}</p>
+			<p>Title: {title}</p>
+			<p>Date: {date}</p>
+			<p>Description: {description}</p>
+			<p>Genre: {genre}</p>
+			<p>Instrument: {instrument}</p>
+			<p>Location: {location}</p>
+			<p>User: {user}</p>
 			<div className="buttons">
 				<Button onClick={onEdit}>Edit</Button>
 				<Button onClick={onDelete} deleteButton="button_delete">

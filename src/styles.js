@@ -20,13 +20,23 @@ export const GlobalStyle = createGlobalStyle`
 		font-size: 1rem;
 		border-left: 10px;
 		font-size: 1rem;
-		color: #FFFD82;
-		background-color: #7F7B82;
+		color: #172121;
+		background-color: white;
+		
 
 
 	}
 	main {
 		padding: 1em;
+		display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: center;
+	gap: 0.5rem;
+	margin: 50px;
+	padding: 50px 0 50px 0;
+	font-family: Helvetica;
 
 	}
 
@@ -39,7 +49,8 @@ export const GlobalStyle = createGlobalStyle`
 		
 	}
 	a {
-		color: #FFFD82;
-		text-decoration: line
+		/* color: #FFFD82; */
+		color: black;
+		text-decoration: none
 	}
 `;

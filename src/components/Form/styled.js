@@ -6,12 +6,18 @@ const StyledForm = styled.form`
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-content: center;
-	align-items: stretch;
 	gap: 0.5rem;
 	margin-top: 0;
-	box-shadow: 5px 5px 15px 5px #444554;
-	padding: 50px 0 50px 0;
+	padding: 20px 0 50px 0;
+	font-family: Helvetica;
+	font-size: small;
 
+	.search-button {
+		background-color: #93A8AC;
+		margin-top: 20px;
+		width: 120px;
+		height: 25px;
+	}
 `;
 
 export default StyledForm;

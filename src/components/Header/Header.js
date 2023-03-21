@@ -8,8 +8,8 @@ import StyledHeader from './styled';
 export default function Header() {
 	return (
 		<StyledHeader>
-			<h2 >
-				<Link href="/" className='title-text'>
+			<h2 className='title-text'>
+				<Link href="/" >
 					BandSeeds
 				</Link>
 			</h2>

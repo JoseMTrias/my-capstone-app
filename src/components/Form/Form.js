@@ -1,5 +1,5 @@
 import {useState} from 'react';
-
+import Button from '../Button';
 import Board from '../Board/Board';
 
 import StyledForm from './styled';
@@ -47,7 +47,7 @@ export default function Form() {
 				</select>
 				<label htmlFor="Location">Location:</label>
 				<input type="text" id="location" name="location"></input>
-				<button type="submit">Search</button>
+				<Button type="submit" className="search-button">Search</Button>
 			</StyledForm>
 			{announcements.map(announcement => {
 				if (

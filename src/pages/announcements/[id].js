@@ -27,7 +27,7 @@ export default function AnnouncementDetailPage() {
 
 	return (
 		<div>
-			<h3>Announcement Profile:</h3>
+			<h4>Announcement Profile</h4>
 			<Card
 				id={announcementDetail._id}
 				date={announcementDetail.date}

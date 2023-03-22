@@ -1,7 +1,12 @@
 import {useRouter} from 'next/router';
+import { useSession, signIn, signOut } from "next-auth/react"
+
 import useSWR from 'swr';
 
 export default function CreateForm() {
+	const { data: session } = useSession()
+
+	console.log("sessionn create form: ", session)
 	const router = useRouter();
 	const announcements = useSWR('/api/announcements');
 
@@ -14,12 +19,18 @@ export default function CreateForm() {
 
 		event.preventDefault();
 
-		const formData = new FormData(event.target);
-		const announcementData = Object.fromEntries(formData);
+		const data = new FormData(event.target);
+		const formData = Object.fromEntries(data);
+
+
+
+		
+
+
 
 		const response = await fetch('api/announcements', {
 			method: 'POST',
-			body: JSON.stringify({...announcementData, date: currentDate}),
+			body: JSON.stringify({...formData, date: currentDate, user: session.user.name, userId: session.user.id}),
 			headers: {
 				'Content-Type': 'application/json',
 			},
@@ -57,10 +68,10 @@ export default function CreateForm() {
 					<input type="text" name="location" />
 				</label>
 				<br></br>
-				<label>
+				{/* <label>
 					User:
 					<input type="text" name="user" />
-				</label>
+				</label> */}
 				<p>Description:</p>
 				<textarea type="text" name="description"></textarea>
 				<br></br>

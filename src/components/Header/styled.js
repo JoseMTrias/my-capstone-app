@@ -4,7 +4,8 @@ import {pxToRem} from '../../utils/unit';
 
 const StyledHeader = styled.header`
 	padding: 0.5em 1em;
-	background: #93A8AC;
+	background-color: #93A8AC;
+	/* background-color: white; */
 	display: flex;
 	font-size: 1em;
 	justify-content: space-between;
@@ -28,7 +29,9 @@ const StyledHeader = styled.header`
 	}
 	.login-options {
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		align-items: flex-end;
+		
 		
 	}
 `;

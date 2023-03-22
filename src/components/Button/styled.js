@@ -37,7 +37,7 @@ const StyledButton = styled.button`
 		border-radius: ${pxToRem(4)};
 		background: #93A8AC;
 		color: #FFFD82;
-		font-size: 0.8em;
+		font-size: 0.7em;
 		display: flex;
 		justify-content: flex-end;
 	}

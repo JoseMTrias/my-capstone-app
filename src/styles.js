@@ -23,7 +23,9 @@ export const GlobalStyle = createGlobalStyle`
 		color: #172121;
 		background-color: white;
 		
-
+	link.user-profile {
+		text-decoration: underline;
+	}
 
 	}
 	main {

@@ -10,10 +10,13 @@ const StyledCard = styled.article`
 	
 	.buttons {
 		display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    	flex-direction: row;
+    	justify-content: flex-end;
 		
 	}
+	.user_profile {
+		text-decoration: underline;
+}
 `;
 
 export default StyledCard;

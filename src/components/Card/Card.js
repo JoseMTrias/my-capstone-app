@@ -23,7 +23,7 @@ export default function Card({
 			<p>Location: {location}</p>
 			<p>User: {user}</p>
 			<div className='buttons'>
-				<StyledButton className='button_edit' onClick={onEdit} >Edit</StyledButton>
+				<Button className='button_edit' onClick={onEdit} >Edit</Button>
 				<Button onClick={onDelete} deleteButton="button_delete">
 					Delete
 				</Button>

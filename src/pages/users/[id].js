@@ -32,7 +32,6 @@ export default function profilePage() {
       <>
         <StyledCard>
           <p>User: {session.user.name} Email: {session.user.email}</p>
-          {/* <p>Email: {session.user.email}</p> */}
           <h4>Announcements from user:</h4>
           <ul>
             {filteredAnnouncements.map((a) => (

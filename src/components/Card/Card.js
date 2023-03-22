@@ -1,5 +1,4 @@
 import Button from '../Button';
-import StyledButton from '../Button/styled';
 import StyledCard from './styled';
 
 export default function Card({
@@ -12,22 +11,23 @@ export default function Card({
 	user,
 	onEdit,
 	onDelete,
-}) {
-	return (
-		<StyledCard>
-			<p>Title: {title}</p>
-			<p>Date: {date}</p>
-			<p>Description: {description}</p>
-			<p>Genre: {genre}</p>
-			<p>Instrument: {instrument}</p>
-			<p>Location: {location}</p>
-			<p>User: {user}</p>
-			<div className='buttons'>
-				<Button className='button_edit' onClick={onEdit} >Edit</Button>
-				<Button onClick={onDelete} deleteButton="button_delete">
-					Delete
-				</Button>
-			</div>
-		</StyledCard>
-	);
-}
+}) {	
+		return (
+			<StyledCard>
+				<p>User: {user}</p>
+				<p>Title: {title}</p>
+				<p>Date: {date}</p>
+				<p>Description: {description}</p>
+				<p>Genre: {genre}</p>
+				<p>Instrument: {instrument}</p>
+				<p>Location: {location}</p>
+				<div className='buttons'>
+					<Button className='button_edit' onClick={onEdit} >Edit</Button>
+					<Button onClick={onDelete} deleteButton="button_delete">
+						Delete
+					</Button>
+				</div>
+			</StyledCard>
+		);
+	}
+

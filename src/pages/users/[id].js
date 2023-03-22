@@ -36,9 +36,9 @@ export default function profilePage() {
           <h4>Announcements from user:</h4>
           <ul>
             {filteredAnnouncements.map((a) => (
-              <>
+              <li>
               <Link href={`/announcements/${a._id}`}>{a.title}</Link><br/>
-              </>
+              </li>
             ))}
           </ul>
         </StyledCard>

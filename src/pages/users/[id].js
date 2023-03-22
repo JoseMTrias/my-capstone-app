@@ -1,6 +1,7 @@
 import StyledCard from '../../components/Card/styled'
 import { useSession} from "next-auth/react"
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 
 export default function profilePage() {
@@ -22,20 +23,23 @@ export default function profilePage() {
 
     const filteredAnnouncements = announcements.filter((announcement) => {
       if (session?.user.id === announcement.userId) {
-        return announcement
+        return announcement 
       }
     })
-
-  console.log("filtered: ", filteredAnnouncements)
 
   if (status === "authenticated") {
     return (
       <>
         <StyledCard>
-          <p>User: {session.user.name}</p>
-          <p>Email: {session.user.email}</p>
+          <p>User: {session.user.name} Email: {session.user.email}</p>
+          {/* <p>Email: {session.user.email}</p> */}
+          <h4>Announcements from user:</h4>
           <ul>
-            <li>{filteredAnnouncements.title}</li>
+            {filteredAnnouncements.map((a) => (
+              <>
+              <Link href={`/announcements/${a._id}`}>{a.title}</Link><br/>
+              </>
+            ))}
           </ul>
         </StyledCard>
       </>

@@ -6,16 +6,15 @@ const StyledButton = styled.button`
 
 	&.search-button {
 
-		margin: 0px 2px 2px 6px;
-		border-radius: ${pxToRem(4)};
-		background: #93A8AC;
-		color: #FFFD82;
+		/* margin: 0px 2px 2px 6px; */
+		border-color: #66FCF1;
+		background-color: #1F2833;
+		color: #C5C6C7;
 		font-size: 0.8em;
 	}
 
 	.login-options {
 		display: flex;
-		
 	}
 
 	.buttons {

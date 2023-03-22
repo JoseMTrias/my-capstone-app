@@ -4,7 +4,7 @@ import {pxToRem} from '../../utils/unit';
 
 const StyledHeader = styled.header`
 	padding: 0.5em 1em;
-	background-color: #93A8AC;
+	background-color: white;
 	/* background-color: white; */
 	display: flex;
 	font-size: 1em;
@@ -15,6 +15,9 @@ const StyledHeader = styled.header`
 	position: fixed;
 	top: 0;
 	
+	.title-text {
+		padding-top: 40px;
+	}
 
 	&:hover {
 		/* background: lightgray; */
@@ -24,7 +27,7 @@ const StyledHeader = styled.header`
 		/* background: lightgray; */
 	}
 	a {
-		color: #FFFD82;
+		color: black;
 		text-align: center
 	}
 	.login-options {

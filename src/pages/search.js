@@ -8,13 +8,13 @@ import Form from '../components/Form/Form';
 export default function SearchPage() {
 	return (
 		<>
-			<Head>
+			{/* <Head>
 				<title key="title">Search</title>
 				<meta key="description" name="description" content="Search" />
 			</Head>
 			<Link href="/search">
 				<h2>Search</h2>
-			</Link>
+			</Link> */}
 			<Form></Form>
 		</>
 	);

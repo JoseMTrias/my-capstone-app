@@ -5,7 +5,6 @@ import Link from 'next/link';
 
 export default function HomePage() {
 	const { data: session } = useSession()
-	console.log(session)
 	
 	return (
 		<>
@@ -20,23 +19,12 @@ export default function HomePage() {
 				nascetur ridiculus mus. Donec quam felis,
 			</p>
 			<section className="landing_page">
-				<Link href="/search">
+				{/* <Link href="/search">
 					<button type="button">Search</button>
 				</Link>
 				{
 					session? <Link href="/offer"><button type="button">Offer</button></Link> : <Link href="/api/auth/signin"><button type="button">Offer</button></Link>
-				}
-				{/* <Link 
-				{
-					session? href="/offer" : href="/api/auth/signin"
-				}>
-					<button type="button">Offer</button>
-				</Link> */}
-				{/* <Link href="/offer">
-					<button type="button">Offer</button>
-				</Link> */}
-				
-				
+				} */}
 			</section>
 			
 			<br />

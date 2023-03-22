@@ -10,6 +10,7 @@ const announcementSchema = new Schema({
 	location: {type: String},
 	user: {type: String},
 	description: {type: String},
+	userId: {type: String}
 });
 
 const Announcement = mongoose.models.Announce || mongoose.model('Announce', announcementSchema);

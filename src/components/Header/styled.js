@@ -16,7 +16,7 @@ const StyledHeader = styled.header`
 	top: 0;
 	
 	.title-text {
-		padding-top: 40px;
+		padding-top: 10px;
 	}
 
 	&:hover {

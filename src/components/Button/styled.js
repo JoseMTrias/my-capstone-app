@@ -7,9 +7,9 @@ const StyledButton = styled.button`
 	&.search-button {
 
 		/* margin: 0px 2px 2px 6px; */
-		border-color: #66FCF1;
-		background-color: #1F2833;
-		color: #C5C6C7;
+		border-color: gray;
+		background-color: white;
+		color: black;
 		font-size: 0.8em;
 	}
 

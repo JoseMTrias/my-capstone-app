@@ -52,7 +52,7 @@ export const GlobalStyle = createGlobalStyle`
 	}
 	a {
 		/* color: #FFFD82; */
-		color: #C5C6C7;
+		color: white;
 		text-decoration: none
 	}
 `;

@@ -1,10 +1,11 @@
-import { useSession, signIn, signOut } from "next-auth/react"
+// import { useSession, signIn, signOut } from "next-auth/react"
 
 import Head from 'next/head';
 import Link from 'next/link';
+import Board from "../components/Board/Board";
 
 export default function HomePage() {
-	const { data: session } = useSession()
+	// const { data: session } = useSession()
 	
 	return (
 		<>
@@ -19,14 +20,7 @@ export default function HomePage() {
 				nascetur ridiculus mus. Donec quam felis,
 			</p>
 			<section className="landing_page">
-				{/* <Link href="/search">
-					<button type="button">Search</button>
-				</Link>
-				{
-					session? <Link href="/offer"><button type="button">Offer</button></Link> : <Link href="/api/auth/signin"><button type="button">Offer</button></Link>
-				} */}
 			</section>
-			
 			<br />
 		</>
 	);

@@ -1,7 +1,9 @@
 import StyledCard from '../../components/Card/styled'
-import { useSession} from "next-auth/react"
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import LoginButton from '../../components/Button/login-btn'
+import { useSession, signIn, signOut } from "next-auth/react"
+
 
 
 export default function profilePage() {
@@ -33,6 +35,7 @@ export default function profilePage() {
       <>
         <StyledCard>
           <p>User: {session.user.name} Email: {session.user.email}</p>
+          <a onClick={() => signOut()}>Sign out</a>
           <h4>User announcements:</h4>
           <ul>
             {filteredAnnouncements.map((a) => (
@@ -41,6 +44,7 @@ export default function profilePage() {
               </li>
             ))}
           </ul>
+        <Link href="/offer"> Create new</Link> 
         </StyledCard>
       </>
     )

@@ -16,7 +16,10 @@ const StyledCard = styled.article`
 	}
 	.user_profile {
 		text-decoration: underline;
-}
+	}
+	a {
+		color: black;
+	}
 `;
 
 export default StyledCard;

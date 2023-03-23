@@ -6,12 +6,13 @@ const StyledFooter = styled.footer`
 	padding: 0.8em 0.8em;
 	border-top: 1px solid rgba(0, 0, 0, 0.3);
 	/* border-radius: ${pxToRem(4)}; */
-	background-color: white;
+	background-color: black;
 	color: #444554;
 	font-size: 0.8em;
 	display: flex;
+	align-items: center;
 	justify-content: space-evenly;
-	width: 100%;
+	height: 70px;
 	position: fixed;
 	bottom: 0;
 	width: 100%;

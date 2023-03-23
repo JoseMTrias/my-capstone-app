@@ -1,8 +1,6 @@
 import Link from 'next/link';
-import LoginButton from '../Button/login-btn';
 import LogoApp from "../../../public/logofinal.png"
 import Image from 'next/image';
-import Dropdown from '../Dropdown/Dropdown';
 
 import StyledHeader from './styled';
 
@@ -17,7 +15,6 @@ export default function Header() {
 			{/* <nav>
 				<LoginButton></LoginButton>
 			</nav> */}
-			<Dropdown></Dropdown>
 		</StyledHeader>
 	);
 }

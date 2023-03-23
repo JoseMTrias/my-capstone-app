@@ -18,11 +18,12 @@ const StyledForm = styled.form`
 		width: 100px;
 		height: 25px;
 		font-size: small;
+		border: 2px solid #f4e158;
 	}
 
 	.select {
 		padding: 8px 8px;
-  		border: 2px solid gray;
+  		border: 2px solid black;
   		border-radius: 2px;
 	}
 `;

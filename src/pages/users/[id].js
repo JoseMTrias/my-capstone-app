@@ -3,7 +3,8 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import LoginButton from '../../components/Button/login-btn'
 import { useSession, signIn, signOut } from "next-auth/react"
-
+import StyledButton from '../../components/Button/styled'
+import Button from '../../components/Button'
 
 
 export default function profilePage() {
@@ -32,19 +33,30 @@ export default function profilePage() {
   if (status === "authenticated") {
     return (
       <>
-        <StyledCard>
-          <p>User: {session.user.name} Email: {session.user.email}</p>
-          <a onClick={() => signOut()}>Sign out</a>
-          <h4>User announcements:</h4>
-          <ul>
+        <StyledCard className='user-info'>
+        <h4 className='user-info'>USER INFO</h4>
+
+          <section className='user-email'>
+          <p>{session.user.name} </p>
+          <p>{session.user.email}</p>
+          </section>
+          <br></br>
+            <StyledButton  className='sign-out' onClick={() => signOut()}>sign out</StyledButton>
+            </StyledCard>
+          <br></br>
+          <StyledCard>
+
+          <h4>USER ANNOUNCEMENTS</h4>
+          <ul className='user-announcements-ul'>
             {filteredAnnouncements.map((a) => (
               <li>
               <Link href={`/announcements/${a._id}`}>{a.title}</Link><br/>
               </li>
             ))}
+            <br></br>
           </ul>
-        <Link href="/offer"> Create new</Link> 
-        </StyledCard>
+        <StyledButton className='create-new' href="/offer"> create new</StyledButton> 
+          </StyledCard>
       </>
     )
   }

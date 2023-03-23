@@ -16,8 +16,8 @@ export default function Header() {
 						<div></div>
 					</a>
       				<div className="dropdown-content">
-        				<a href="/search">Search</a>
-       					<a href="/about">About</a>
+        				<a href="/search">SEARCH</a>
+       					<a href="/about">ABOUT</a>
 						   
 
       				</div>

@@ -14,7 +14,7 @@ const StyledForm = styled.form`
 
 	.search-button {
 		background-color: white;
-		margin-top: 10px;
+		margin: 10px auto;
 		width: 100px;
 		height: 25px;
 		font-size: small;

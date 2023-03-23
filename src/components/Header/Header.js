@@ -10,19 +10,22 @@ export default function Header() {
 		<StyledHeader>
 			<Dropdown>
     			<li className="dropdown">
-      				<a href="#" className="dropbtn">Menu</a>
+      				<a href="#" className="dropbtn">
+						<div></div>
+						<div></div>
+						<div></div>
+					</a>
       				<div className="dropdown-content">
         				<a href="/search">Search</a>
        					<a href="/about">About</a>
-        				{/* <LoginButton></LoginButton> */}
+						   
+
       				</div>
     			</li>
 			</Dropdown>
-			<div className='title-text'>
 				<Link href="/" >
 					<Image className='header-logo' src={LogoApp} height="75px" width="150px"/>
 				</Link>
-			</div>
 
 
 		</StyledHeader>

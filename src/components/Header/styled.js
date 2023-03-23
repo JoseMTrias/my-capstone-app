@@ -13,7 +13,7 @@ const StyledHeader = styled.header`
 	height: 80px;
 	position: fixed;
 	top: 0;
-	border-bottom: 1px #dcdcdc solid;
+	/* border-bottom: 1px #dcdcdc solid; */
 	
 	.title-text {
 		padding-top: 7px;
@@ -36,6 +36,15 @@ const StyledHeader = styled.header`
 		align-items: flex-end;
 		
 		
+	}
+
+	div {
+		width: 22px;
+		height: 3px;
+		background-color: #303030;
+		margin: 4px 0;
+		border-radius: 2px;
+
 	}
 `;
 

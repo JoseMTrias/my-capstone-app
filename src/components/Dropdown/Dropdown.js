@@ -37,7 +37,7 @@ export const Dropdown = styled.ul `
         position: absolute;
         background-color: white;
         min-width: 80px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
         z-index: 1;
 
         & > a {

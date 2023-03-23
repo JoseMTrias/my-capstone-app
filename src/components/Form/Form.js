@@ -3,6 +3,7 @@ import Button from '../Button';
 import Board from '../Board/Board';
 
 import StyledForm from './styled';
+import StyledButton from '../Button/styled';
 
 export default function Form() {
 	const [announcements, setAnnouncements] = useState([]);
@@ -25,9 +26,9 @@ export default function Form() {
 	};
 	return (
 		<>
-			<StyledForm onSubmit={handleSubmit} action="/result" method="post">
+			<StyledForm onSubmit={handleSubmit} className="search-form" action="/result" method="post">
 				<label htmlFor="instrument">Instrument:</label>
-				<select className="select" id="instrument" name="instrument">
+				<select className="select" id="instrument" name="instrument" >
 					<option value="All">All</option>
 					<option value="Guitar">Guitar</option>
 					<option value="Bass">Bass</option>
@@ -35,7 +36,7 @@ export default function Form() {
 					<option value="Vocals">Vocals</option>
 				</select>
 				<label htmlFor="genre">Genre:</label>
-				<select id="genre" name="genre">
+				<select className="select" id="genre" name="genre">
 					<option value="All">All</option>
 					<option value="Rock">Rock</option>
 					<option value="Shoegaze">Shoegaze</option>
@@ -46,8 +47,8 @@ export default function Form() {
 					<option value="Classical">Classical</option>
 				</select>
 				<label htmlFor="Location">Location:</label>
-				<input type="text" id="location" name="location"></input>
-				<Button type="submit" className="search-button">search</Button>
+				<input className="select" type="text" id="location" name="location" placeholder='Enter City'></input>
+				<StyledButton type="submit" className="search-button">search</StyledButton>
 			</StyledForm>
 			{announcements.map(announcement => {
 				if (

@@ -13,6 +13,7 @@ const StyledButton = styled.button`
 		font-size: 0.8em;
 	}
 
+
 	.login-options {
 		display: flex;
 	}

@@ -14,10 +14,16 @@ const StyledForm = styled.form`
 
 	.search-button {
 		background-color: white;
-		margin-top: 20px;
-		width: 120px;
+		margin-top: 10px;
+		width: 100px;
 		height: 25px;
 		font-size: small;
+	}
+
+	.select {
+		padding: 8px 8px;
+  		border: 2px solid gray;
+  		border-radius: 2px;
 	}
 `;
 

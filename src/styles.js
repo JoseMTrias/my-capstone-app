@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
 		font-size: 1rem;
 		border-left: 10px;
 		font-size: 1rem;
-		color: #172121;
+		color: black;
 		background-color: white;
 		
 	link.user-profile {
@@ -31,14 +31,14 @@ export const GlobalStyle = createGlobalStyle`
 	main {
 		padding: 1em;
 		display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	align-content: center;
-	gap: 0.5rem;
-	margin: 50px;
-	padding: 0px 0 20px 0;
-	font-family: Helvetica;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-content: center;
+		gap: 0.5rem;
+		margin: 50px;
+		padding: 0px 0 20px 0;
+		font-family: Helvetica;
 
 	}
 
@@ -52,7 +52,7 @@ export const GlobalStyle = createGlobalStyle`
 	}
 	a {
 		/* color: #FFFD82; */
-		color: black;
+		color: white;
 		text-decoration: none
 	}
 `;

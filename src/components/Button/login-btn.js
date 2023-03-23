@@ -11,7 +11,7 @@ export default function LoginButton() {
         <img src={session.user.image} style={{borderRadius: "50px", height: "35px", width: "35px"}} ></img>
         </Link>
         <br></br>
-        <a onClick={() => signOut()}>Sign out</a>
+        {/* <a onClick={() => signOut()}>Sign out</a> */}
       </div>
     )
   }

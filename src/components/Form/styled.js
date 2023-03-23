@@ -8,12 +8,12 @@ const StyledForm = styled.form`
 	align-content: center;
 	gap: 0.5rem;
 	margin-top: 0;
-	padding: 20px 0 50px 0;
+	padding: 10px 0 10px 0;
 	font-family: Helvetica;
 	font-size: small;
 
 	.search-button {
-		background-color: #93A8AC;
+		background-color: white;
 		margin-top: 20px;
 		width: 120px;
 		height: 25px;

@@ -13,7 +13,9 @@ const StyledBoard = styled.article`
 	border-radius: 5px;
 	
 	}
-
+	a {
+		color: black;
+	}
 
 	/* .link-announcements {
 		color: black;

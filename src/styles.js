@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
 
 	body {
 		margin: 0;
-		padding-top: 5em;
+		padding-top: 4em;
 		font-size: 1rem;
 		border-left: 10px;
 		font-size: 1rem;
@@ -51,8 +51,6 @@ export const GlobalStyle = createGlobalStyle`
 		
 	}
 	a {
-		/* color: #FFFD82; */
-		color: white;
 		text-decoration: none
 	}
 `;

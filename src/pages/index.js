@@ -1,12 +1,12 @@
-// import { useSession, signIn, signOut } from "next-auth/react"
-
+import { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Board from "../components/Board/Board";
+import Card from '../components/Card/Card';
 
 export default function HomePage() {
-	// const { data: session } = useSession()
 	
+
 	return (
 		<>
 			<Head>
@@ -20,6 +20,7 @@ export default function HomePage() {
 				nascetur ridiculus mus. Donec quam felis,
 			</p>
 			<section className="landing_page">
+
 			</section>
 			<br />
 		</>

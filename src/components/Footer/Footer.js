@@ -9,8 +9,9 @@ export default function Footer() {
 	return (
 		<>
 		<StyledFooter>
-			<Link href="/" >Home</Link>
-			<Link href="/search">Search</Link>
+			<p>TheBandSeeds 2023</p>
+			{/* <Link href="/" >Home</Link>
+			<Link href="/search">Search</Link> */}
 		 	{/* <Link href="/offer"> Create</Link>  */}
 			<LoginButton></LoginButton>
 		</StyledFooter>

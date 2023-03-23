@@ -28,7 +28,6 @@ export default function profilePage() {
         return announcement 
       }
     })
-    console.log(filteredAnnouncements)
 
   if (status === "authenticated") {
     return (

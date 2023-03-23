@@ -4,9 +4,9 @@ import {pxToRem} from '../../utils/unit';
 
 const StyledButton = styled.button`
 
-	&.search-button {
+	.search-button {
 
-		/* margin: 0px 2px 2px 6px; */
+		margin: 0px 2px 2px 6px;
 		border-color: gray;
 		background-color: white;
 		color: black;

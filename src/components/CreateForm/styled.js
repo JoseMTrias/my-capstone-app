@@ -5,11 +5,13 @@ const StyledCreateForm = styled.form`
 	flex-direction: column;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	align-content: center;
 	margin-top: 0;
-	padding: 10px 0 10px 0;
 	font-family: Helvetica;
 	font-size: small;
+	padding: 16px 32px 16px;
+	margin-bottom: 1.5em;
+	border: 1px solid black;
+	box-shadow: 10px 10px 0px 0px #f4e158, -40px 37px 0px 30px rgba(0,0,0,0);
 
 	.button-create {
 		background-color: white;
@@ -20,11 +22,6 @@ const StyledCreateForm = styled.form`
 		border: 2px solid #f4e158;
 	}
 
-	.select {
-		padding: 8px 8px;
-  		border: 2px solid black;
-  		border-radius: 2px;
-	}
 `;
 
 export default StyledCreateForm;

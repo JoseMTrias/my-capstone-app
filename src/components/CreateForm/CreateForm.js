@@ -1,5 +1,7 @@
 import {useRouter} from 'next/router';
 import { useSession, signIn, signOut } from "next-auth/react"
+import StyledCreateForm from './styled';
+import StyledButton from '../Button/styled';
 
 import useSWR from 'swr';
 
@@ -40,7 +42,7 @@ export default function CreateForm() {
 
 	return (
 		<>
-			<form onSubmit={handleSubmit}>
+			<StyledCreateForm onSubmit={handleSubmit}>
 				<label>
 					Title:
 					<input type="text" name="title" />
@@ -64,8 +66,8 @@ export default function CreateForm() {
 				<p>Description:</p>
 				<textarea type="text" name="description"></textarea>
 				<br></br>
-				<input type="submit" value="Create" />
-			</form>
+				<StyledButton className='button-create' type="submit" value="Create">Create</StyledButton>
+			</StyledCreateForm>
 		</>
 	);
 }

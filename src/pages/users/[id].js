@@ -3,42 +3,62 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useSession, signIn, signOut } from "next-auth/react"
 import StyledButton from '../../components/Button/styled'
+import { useRouter } from 'next/router'
 
 
 export default function profilePage() {
   const { data: session, status } = useSession()
   const [announcements, setAnnouncements] = useState([])
+  const [user, setUser] = useState()
+  const router = useRouter()
+  const {id} = router.query
+  const [filteredAnnouncements, setFilteredAnnouncements] = useState()
+
   
   useEffect(() => {
     async function getAnnouncements() {
      try {
        const announcementsData = await fetch("/api/announcements")
        const announcements = await announcementsData.json()
-       setAnnouncements(announcements)
+
+       const filteredAnnouncements = announcements.filter((announcement) => {
+        if (id === announcement.userId) {
+          return announcement 
+        }
+      })
+       setAnnouncements(filteredAnnouncements)
      } catch (error) {
        console.log(error)
      }
    }
    getAnnouncements()
-  }, [])
+  }, [id])
 
-    const filteredAnnouncements = announcements.filter((announcement) => {
-      if (session?.user.id === announcement.userId) {
-        return announcement 
-      }
-    })
+  useEffect(() => {
+      async function getUser() {
+       try {
+         const usersData = await fetch(`/api/users/${id}`)
+         const user = await usersData.json()
+         setUser(user)
+       } catch (error) {
+         console.log(error)
+       }
+     }
+     getUser()
+  }, [id])
 
 
 
-  if (status === "authenticated") {
+
+  if (status === "authenticated" && user) {
     return (
       <>
         <StyledCard className='user-info'>
         <h4 className='user-info'>USER INFO</h4>
 
           <section className='user-email'>
-          <p>{session.user.name} </p>
-          <p>{session.user.email}</p>
+          <p>{user.name} </p>
+          <p>{user.email}</p>
           </section>
           <br></br>
             <StyledButton  className='sign-out' onClick={() => signOut()}>sign out</StyledButton>
@@ -48,7 +68,7 @@ export default function profilePage() {
 
           <h4>USER ANNOUNCEMENTS</h4>
           <ul className='user-announcements-ul'>
-            {filteredAnnouncements.map((a) => (
+            {announcements.map((a) => (
               <li>
               <Link href={`/announcements/${a._id}`}>{a.title}</Link><br/>
               </li>

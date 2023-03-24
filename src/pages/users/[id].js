@@ -1,10 +1,8 @@
 import StyledCard from '../../components/Card/styled'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import LoginButton from '../../components/Button/login-btn'
 import { useSession, signIn, signOut } from "next-auth/react"
 import StyledButton from '../../components/Button/styled'
-import Button from '../../components/Button'
 
 
 export default function profilePage() {
@@ -29,6 +27,8 @@ export default function profilePage() {
         return announcement 
       }
     })
+
+
 
   if (status === "authenticated") {
     return (

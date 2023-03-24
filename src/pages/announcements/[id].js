@@ -24,6 +24,7 @@ export default function AnnouncementDetailPage() {
 		});
 		router.push('/');
 	}
+	console.log("announcementtttt: ", announcementDetail)
 
 	return (
 		<div>
@@ -37,6 +38,7 @@ export default function AnnouncementDetailPage() {
 				location={announcementDetail.location}
 				title={announcementDetail.title}
 				user={announcementDetail.user}
+				userId={announcementDetail.userId}
 				onEdit={() => setShowForm(!showForm)}
 				onDelete={handleDeleteAnnouncement}
 			></Card>

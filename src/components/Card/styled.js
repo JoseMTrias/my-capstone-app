@@ -30,11 +30,6 @@ const StyledCard = styled.article`
 		border-bottom: 1px solid #f4e158;
 		right: 0;
 	}
-	
-
-	.sign-out {
-		
-	}
 
 	.user-announcements-ul {
 		margin: 0 0 20px 0;
@@ -44,3 +39,4 @@ const StyledCard = styled.article`
 `;
 
 export default StyledCard;
+

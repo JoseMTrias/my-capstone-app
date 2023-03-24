@@ -42,22 +42,20 @@ const StyledButton = styled.button`
     justify-content: flex-end;
 	}
 
-	&.button_delete {
-		font-size: small;
+	&.button-delete {
 		margin: 0px 2px 2px 6px;
-		border-radius: ${pxToRem(4)};
-		background: #93A8AC;
-		color: #FFFD82;
-		font-size: 0.8em;	
+		background-color: #f4e158;
+		border: #f4e158 1px solid;
+		color: black;
+		font-size: 0.8em;
 	}
-	&.button_edit {
+	&.button-edit {
 		margin: 0px 2px 2px 6px;
-		border-radius: ${pxToRem(4)};
-		background: #93A8AC;
-		color: #FFFD82;
-		font-size: 0.7em;
-		display: flex;
-		justify-content: flex-end;
+		background-color: #f4e158;
+		border: #f4e158 1px solid;
+		color: black;
+		font-size: 0.8em;
+		width: 40px;
 	}
 	&:hover {
 		/* background: #d8b; */

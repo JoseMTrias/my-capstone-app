@@ -1,23 +1,33 @@
 import Link from 'next/link';
-import LoginButton from '../Button/login-btn';
 import LogoApp from "../../../public/logofinal.png"
 import Image from 'next/image';
 import Dropdown from '../Dropdown/Dropdown';
-
 import StyledHeader from './styled';
+import LoginButton from '../Button/login-btn';
 
 export default function Header() {
 	return (
 		<StyledHeader>
-			<div className='title-text'>
+			<Dropdown>
+    			<li className="dropdown">
+      				<a href="#" className="dropbtn">
+						<div></div>
+						<div></div>
+						<div></div>
+					</a>
+      				<div className="dropdown-content">
+        				<a href="/search">SEARCH</a>
+       					<a href="/about">ABOUT</a>
+						   
+
+      				</div>
+    			</li>
+			</Dropdown>
 				<Link href="/" >
 					<Image className='header-logo' src={LogoApp} height="75px" width="150px"/>
 				</Link>
-			</div>
-			{/* <nav>
-				<LoginButton></LoginButton>
-			</nav> */}
-			<Dropdown></Dropdown>
+
+
 		</StyledHeader>
 	);
 }

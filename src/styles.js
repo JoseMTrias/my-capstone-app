@@ -11,12 +11,11 @@ export const GlobalStyle = createGlobalStyle`
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16px;
 		font-family: Arial, Helvetica, sans-serif;
-
 	}
 
 	body {
 		margin: 0;
-		padding-top: 5em;
+		padding-top: 4em;
 		font-size: 1rem;
 		border-left: 10px;
 		font-size: 1rem;
@@ -51,8 +50,6 @@ export const GlobalStyle = createGlobalStyle`
 		
 	}
 	a {
-		/* color: #FFFD82; */
-		color: white;
 		text-decoration: none
 	}
 `;

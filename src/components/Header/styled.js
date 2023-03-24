@@ -5,18 +5,18 @@ import {pxToRem} from '../../utils/unit';
 const StyledHeader = styled.header`
 	padding: 0.5em 1em;
 	background-color: white;
-	/* background-color: white; */
 	display: flex;
 	font-size: 1em;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	height: 100px;
+	height: 80px;
 	position: fixed;
 	top: 0;
+	/* border-bottom: 1px #dcdcdc solid; */
 	
 	.title-text {
-		padding-top: 10px;
+		padding-top: 7px;
 	}
 
 	&:hover {
@@ -36,6 +36,15 @@ const StyledHeader = styled.header`
 		align-items: flex-end;
 		
 		
+	}
+
+	div {
+		width: 22px;
+		height: 3px;
+		background-color: #303030;
+		margin: 4px 0;
+		border-radius: 2px;
+
 	}
 `;
 

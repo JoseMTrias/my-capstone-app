@@ -7,11 +7,11 @@ const StyledFooter = styled.footer`
 	border-top: 1px solid rgba(0, 0, 0, 0.3);
 	/* border-radius: ${pxToRem(4)}; */
 	background-color: black;
-	color: #444554;
+	color: white;
 	font-size: 0.8em;
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	height: 70px;
 	position: fixed;
 	bottom: 0;

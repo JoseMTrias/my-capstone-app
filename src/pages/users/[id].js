@@ -1,9 +1,9 @@
-import StyledCard from '../../components/Card/styled'
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
 import { useSession, signIn, signOut } from "next-auth/react"
-import StyledButton from '../../components/Button/styled'
 import { useRouter } from 'next/router'
+import StyledCard from '../../components/Card/styled'
+import Link from 'next/link'
+import StyledButton from '../../components/Button/styled'
 
 
 export default function profilePage() {
@@ -47,15 +47,11 @@ export default function profilePage() {
      getUser()
   }, [id])
 
-
-
-
   if (status === "authenticated" && user) {
     return (
       <>
         <StyledCard className='user-info'>
-        <h4 className='user-info'>USER INFO</h4>
-
+          <h4 className='user-info'>USER INFO</h4>
           <section className='user-email'>
           <p>{user.name} </p>
           <p>{user.email}</p>
@@ -65,7 +61,6 @@ export default function profilePage() {
             </StyledCard>
           <br></br>
           <StyledCard>
-
           <h4>USER ANNOUNCEMENTS</h4>
           <ul className='user-announcements-ul'>
             {announcements.map((a) => (
@@ -75,7 +70,9 @@ export default function profilePage() {
             ))}
             <br></br>
           </ul>
-        <StyledButton className='create-new' href="/offer"> create new</StyledButton> 
+          <StyledButton className='create-new'>
+            <Link  href="/offer">create new</Link> 
+          </StyledButton>
           </StyledCard>
       </>
     )

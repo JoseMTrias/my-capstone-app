@@ -1,7 +1,6 @@
 import {useRouter} from 'next/router';
 import {useState} from 'react';
 import StyledButton from '../Button/styled';
-import Button from '../Button';
 
 export default function EditForm({announcement}) {
 	const router = useRouter();
@@ -80,17 +79,6 @@ export default function EditForm({announcement}) {
 					/>
 				</label>
 				<br></br>
-				{/* <label>
-					User:
-					<input
-						onChange={e =>
-							setEditAnnouncement({...editAnnouncement, user: e.target.value})
-						}
-						value={editAnnouncement.user}
-						type="text"
-						name="user"
-					/>
-				</label> */}
 				<p>Description:</p>
 				<textarea
 					onChange={e =>

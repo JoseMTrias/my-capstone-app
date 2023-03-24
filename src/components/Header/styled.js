@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import {pxToRem} from '../../utils/unit';
-
 const StyledHeader = styled.header`
 	padding: 0.5em 1em;
 	background-color: white;
@@ -13,7 +11,6 @@ const StyledHeader = styled.header`
 	height: 80px;
 	position: fixed;
 	top: 0;
-	/* border-bottom: 1px #dcdcdc solid; */
 	
 	.title-text {
 		padding-top: 7px;
@@ -26,6 +23,7 @@ const StyledHeader = styled.header`
 	&:active {
 		/* background: lightgray; */
 	}
+
 	a {
 		color: black;
 		text-align: center
@@ -34,8 +32,6 @@ const StyledHeader = styled.header`
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
-		
-		
 	}
 
 	div {
@@ -44,7 +40,6 @@ const StyledHeader = styled.header`
 		background-color: #303030;
 		margin: 4px 0;
 		border-radius: 2px;
-
 	}
 `;
 

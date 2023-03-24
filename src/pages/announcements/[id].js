@@ -24,7 +24,6 @@ export default function AnnouncementDetailPage() {
 		});
 		router.push('/');
 	}
-	console.log("announcementtttt: ", announcementDetail)
 
 	return (
 		<div>

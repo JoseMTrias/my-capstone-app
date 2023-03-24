@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import {pxToRem} from '../../utils/unit';
-
 const StyledButton = styled.button`
 
 	.search-button {
@@ -12,7 +10,6 @@ const StyledButton = styled.button`
 		color: black;
 		font-size: 0.8em;
 	}
-
 
 	&.sign-out {
 		margin: 0px 2px 2px 6px;

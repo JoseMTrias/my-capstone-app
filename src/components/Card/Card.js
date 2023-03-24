@@ -1,8 +1,6 @@
 import Button from '../Button';
 import StyledCard from './styled';
 import StyledButton from '../Button/styled';
-// import Link from 'next/link';
-// import { useRouter } from 'next/router';
 
 export default function Card({
 	date,
@@ -16,12 +14,10 @@ export default function Card({
 	onEdit,
 	onDelete,
 }) {	
-	// const router = useRouter();
-	// const {id} = router.query;
 
 	return (
 			<StyledCard>
-					{userId? <a href={`/users/${userId}`}>User: {user}</a>: ""}
+				{userId? <a href={`/users/${userId}`}>User: {user}</a>: ""}
 				<p>Title: {title}</p>
 				<p>Date: {date}</p>
 				<p>Description: {description}</p>

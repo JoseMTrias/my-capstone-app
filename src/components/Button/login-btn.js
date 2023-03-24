@@ -3,7 +3,6 @@ import Link from "next/link"
 
 export default function LoginButton() {
   const { data: session } = useSession()
-  console.log("session: ", session)
 
   if (session) {
     return (

@@ -77,6 +77,8 @@ export default function profilePage() {
       </>
     )
   }
-  return <StyledButton className='sign-out' href='/api/auth/signin'>sign in</StyledButton>
+  return <StyledButton className='sign-out' >
+    <a href='/api/auth/signin'>sign in</a>
+    </StyledButton>
 
 }

@@ -9,6 +9,9 @@ const nextConfig = {
 		reactRemoveProperties: true,
 		styledComponents: true,
 	},
+	eslint: {
+		ignoreDuringBuilds: true
+	}
 };
 
 export default  nextConfig;

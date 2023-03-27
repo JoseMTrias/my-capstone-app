@@ -66,7 +66,7 @@ export default function CreateForm() {
 				<p>Description:</p>
 				<textarea type="text" name="description"></textarea>
 				<br></br>
-				<StyledButton className='button-create' type="submit" value="Create">Create</StyledButton>
+				<StyledButton className='button-create' type="submit" value="Create">create</StyledButton>
 			</StyledCreateForm>
 		</>
 	);

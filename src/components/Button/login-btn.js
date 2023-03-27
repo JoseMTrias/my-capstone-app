@@ -10,7 +10,7 @@ export default function LoginButton() {
     return (
       <div className="login-options">
         <Link href={`/users/${session.user.id}`}>
-        <Image width={35} height={35} alt={`${session.user.name}&apos;s profile photo`} src={session.user.image} style={{borderRadius: "50px", height: "35px", width: "35px"}} ></Image>
+          <Image width={35} height={35} alt={`${session.user.name}&apos;s profile photo`} src={session.user.image} style={{borderRadius: "50px"}} ></Image>
         </Link>
         <br></br>
         {/* <a onClick={() => signOut()}>Sign out</a> */}

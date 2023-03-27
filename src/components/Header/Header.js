@@ -21,7 +21,7 @@ export default function Header() {
     			</li>
 			</Dropdown>
 				<Link href="/" >
-					<Image className='header-logo' src={LogoApp} height="75px" width="150px"/>
+					<Image alt='The Band Seeds Logo' className='header-logo' src={LogoApp} height="75px" width="150px"/>
 				</Link>
 		</StyledHeader>
 	);

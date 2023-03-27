@@ -9,7 +9,7 @@ const StyledFooter = styled.footer`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 70px;
+	height: 50px;
 	position: fixed;
 	bottom: 0;
 	width: 100%;

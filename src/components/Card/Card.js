@@ -24,7 +24,7 @@ export default function Card({
 				<p>Genre: {genre}</p>
 				<p>Instrument: {instrument}</p>
 				<p>Location: {location}</p>
-				{session.user.id === userId? <div className='buttons'>
+				{session?.user.id === userId? <div className='buttons'>
 					<StyledButton className='button-edit' onClick={onEdit} >edit</StyledButton>
 					<StyledButton className='button-delete' onClick={onDelete} deleteButton="button_delete">
 						delete

@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 const StyledButton = styled.button`
 
+	border-radius: 2px;
+
 	.search-button {
 		
 		margin: 0px 2px 2px 6px;

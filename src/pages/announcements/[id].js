@@ -1,5 +1,7 @@
 import {useRouter} from 'next/router';
 import {useEffect, useState} from 'react';
+import { useSession, signIn, signOut } from "next-auth/react"
+
 
 import Card from '../../components/Card/Card';
 import EditForm from '../../components/EditForm/EditForm';
@@ -8,6 +10,8 @@ export default function AnnouncementDetailPage() {
 	const router = useRouter();
 	const {id} = router.query;
 	const [showForm, setShowForm] = useState(false);
+	const { data: session, status } = useSession()
+
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -40,6 +44,7 @@ export default function AnnouncementDetailPage() {
 				userId={announcementDetail.userId}
 				onEdit={() => setShowForm(!showForm)}
 				onDelete={handleDeleteAnnouncement}
+				session={session}
 			></Card>
 			{showForm && <EditForm announcement={announcementDetail} />}
 			<br></br>

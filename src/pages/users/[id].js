@@ -12,9 +12,8 @@ export default function profilePage() {
   const [user, setUser] = useState()
   const router = useRouter()
   const {id} = router.query
-  const [filteredAnnouncements, setFilteredAnnouncements] = useState()
+  // const [filteredAnnouncements, setFilteredAnnouncements] = useState()
 
-  
   useEffect(() => {
     async function getAnnouncements() {
      try {
@@ -78,7 +77,7 @@ export default function profilePage() {
     )
   }
   return <StyledButton className='sign-out' >
-    <a href='/api/auth/signin'>sign in</a>
-    </StyledButton>
+          <a href='/api/auth/signin'>sign in</a>
+        </StyledButton>
 
 }

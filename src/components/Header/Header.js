@@ -3,7 +3,6 @@ import LogoApp from "../../../public/logofinal.png"
 import Image from 'next/image';
 import Dropdown from '../Dropdown/Dropdown';
 import StyledHeader from './styled';
-import LoginButton from '../Button/login-btn';
 
 export default function Header() {
 	return (
@@ -18,16 +17,12 @@ export default function Header() {
       				<div className="dropdown-content">
         				<a href="/search">SEARCH</a>
        					<a href="/about">ABOUT</a>
-						   
-
       				</div>
     			</li>
 			</Dropdown>
 				<Link href="/" >
 					<Image className='header-logo' src={LogoApp} height="75px" width="150px"/>
 				</Link>
-
-
 		</StyledHeader>
 	);
 }

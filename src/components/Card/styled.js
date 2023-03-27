@@ -8,20 +8,21 @@ const StyledCard = styled.article`
 	display: flex;
 	flex-direction: column;
 	border: 1px solid black;
-	/* box-shadow: 0px 3px 13px -10px #f4e158, 1px 21px 9px 30px rgba(0,0,0,0); */
 	box-shadow: 10px 10px 0px 0px #f4e158, -40px 37px 0px 30px rgba(0,0,0,0);
+	
 	.buttons {
 		display: flex;
     	flex-direction: row;
     	justify-content: flex-end;
-		
 	}
 	.user_profile {
 		text-decoration: underline;
 	}
+
 	a {
 		color: black;
 	}
+
 	.user-info {
 		margin-bottom: 0;
 	}
@@ -34,7 +35,6 @@ const StyledCard = styled.article`
 	.user-announcements-ul {
 		margin: 0 0 20px 0;
 		border-bottom: 1px solid #f4e158;
-
 	}
 `;
 

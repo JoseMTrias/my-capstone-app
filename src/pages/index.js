@@ -10,7 +10,7 @@ export default function HomePage() {
 	return (
 		<>
 			<Head>
-				<title key="title">Music App</title>
+				<title key="title">TheBandSeeds</title>
 				<meta key="description" name="description" content="This is my project" />
 			</Head>
 			<h2>Home</h2>

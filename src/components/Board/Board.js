@@ -1,5 +1,4 @@
 import Link from 'next/link';
-
 import StyledBoard from './styled';
 
 export default function Board({title, id}) {

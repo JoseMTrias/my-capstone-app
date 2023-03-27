@@ -61,12 +61,6 @@ export default function Form() {
 							key={announcement._id}
 							title={announcement.title}
 							id={announcement._id}
-							// date={announcement.date}
-							// instrument={announcement.instrument}
-							// genre={announcement.genre}
-							// location={announcement.location}
-							// user={announcement.user}
-							// description={announcement.description}
 						></Board>
 					);
 				}
@@ -80,13 +74,6 @@ export default function Form() {
 								key={announcement._id}
 								title={announcement.title}
 								id={announcement._id}
-
-								// date={announcement.date}
-								// instrument={announcement.instrument}
-								// genre={announcement.genre}
-								// location={announcement.location}
-								// user={announcement.user}
-								// description={announcement.description}
 							></Board>
 						);
 					}

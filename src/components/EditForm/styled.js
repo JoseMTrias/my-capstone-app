@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyledCreateForm = styled.form`
+const StyledEditForm = styled.form`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -27,4 +27,4 @@ const StyledCreateForm = styled.form`
 	}
 `;
 
-export default StyledCreateForm;
+export default StyledEditForm;

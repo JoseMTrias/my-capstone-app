@@ -43,28 +43,20 @@ export default function CreateForm() {
 	return (
 		<>
 			<StyledCreateForm onSubmit={handleSubmit}>
-				<label>
-					Title:
-					<input type="text" name="title" />
-				</label>
+				<label>Title:</label>
+				<input type="text" name="title" />
 				<br></br>
-				<label>
-					Instrument:
-					<input type="text" name="instrument" />
-				</label>
+				<label>Instrument:</label>
+				<input type="text" name="instrument" />
 				<br></br>
-				<label>
-					Genre:
-					<input type="text" name="genre" />
-				</label>
+				<label>Genre:</label>
+				<input type="text" name="genre" />
 				<br></br>
-				<label>
-					Location:
-					<input type="text" name="location" />
-				</label>
+				<label>Location:</label>
+				<input type="text" name="location" />
 				<br></br>
-				<p>Description:</p>
-				<textarea type="text" name="description"></textarea>
+				<label>Description:</label>
+				<textarea className='text-area' type="text" name="description" ></textarea>
 				<br></br>
 				<StyledButton className='button-create' type="submit" value="Create">create</StyledButton>
 			</StyledCreateForm>

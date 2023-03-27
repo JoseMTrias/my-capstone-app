@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
 
 	body {
 		margin: 0;
-		padding-top: 4em;
+		padding-top: 3em;
 		font-size: 1rem;
 		border-left: 10px;
 		font-size: 1rem;

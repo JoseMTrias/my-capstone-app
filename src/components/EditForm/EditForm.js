@@ -1,6 +1,7 @@
 import {useRouter} from 'next/router';
 import {useState} from 'react';
 import StyledButton from '../Button/styled';
+import StyledEditForm from './styled';
 
 export default function EditForm({announcement}) {
 	const router = useRouter();
@@ -30,9 +31,8 @@ export default function EditForm({announcement}) {
 
 	return (
 		<>
-			<form onSubmit={handleEdit}>
-				<label>
-					Title:
+			<StyledEditForm onSubmit={handleEdit}>
+				<label>Title:</label>
 					<input
 						onChange={e =>
 							setEditAnnouncement({...editAnnouncement, title: e.target.value})
@@ -41,10 +41,8 @@ export default function EditForm({announcement}) {
 						type="text"
 						name="title"
 					/>
-				</label>
 				<br></br>
-				<label>
-					Instrument:
+				<label>Instrument:</label>
 					<input
 						onChange={e =>
 							setEditAnnouncement({...editAnnouncement, instrument: e.target.value})
@@ -53,10 +51,8 @@ export default function EditForm({announcement}) {
 						type="text"
 						name="instrument"
 					/>
-				</label>
 				<br></br>
-				<label>
-					Genre:
+				<label>Genre:</label>
 					<input
 						onChange={e =>
 							setEditAnnouncement({...editAnnouncement, genre: e.target.value})
@@ -65,10 +61,8 @@ export default function EditForm({announcement}) {
 						type="text"
 						name="genre"
 					/>
-				</label>
 				<br></br>
-				<label>
-					Location:
+				<label>Location:</label>
 					<input
 						onChange={e =>
 							setEditAnnouncement({...editAnnouncement, location: e.target.value})
@@ -77,10 +71,9 @@ export default function EditForm({announcement}) {
 						type="text"
 						name="location"
 					/>
-				</label>
 				<br></br>
 				<p>Description:</p>
-				<textarea
+				<textarea className='text-area'
 					onChange={e =>
 						setEditAnnouncement({...editAnnouncement, description: e.target.value})
 					}
@@ -89,8 +82,8 @@ export default function EditForm({announcement}) {
 					value={editAnnouncement.description}
 				></textarea>
 				<br></br>
-				<StyledButton className='button_edit' type="submit" value="Update" >Update</StyledButton>
-			</form>
+				<StyledButton className='button-edit' type="submit" value="Update" >Update</StyledButton>
+			</StyledEditForm>
 		</>
 	);
 }

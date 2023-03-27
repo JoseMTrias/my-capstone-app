@@ -30,7 +30,6 @@ export const Dropdown = styled.ul `
   & > .dropdown {
       display: inline-block;
       font-size: medium;
-      
 
       & > .dropdown-content {
         display: none;

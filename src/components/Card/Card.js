@@ -15,10 +15,6 @@ export default function Card({
 	session
 }) {	
 
-	console.log("session user ID: ", session.user.id)
-	console.log("user ID", userId)
-
-
 	return (
 			<StyledCard>
 				{userId? <a href={`/users/${userId}`}>User: {user}</a>: ""}
@@ -34,9 +30,6 @@ export default function Card({
 						delete
 					</StyledButton>
 				</div> : null}
-
-				
-				
 			</StyledCard>
 		);
 	}

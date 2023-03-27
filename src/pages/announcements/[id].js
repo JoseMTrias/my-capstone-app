@@ -1,18 +1,17 @@
 import {useRouter} from 'next/router';
 import {useEffect, useState} from 'react';
 import { useSession, signIn, signOut } from "next-auth/react"
-// import {notFound} from "next/navigation"
-import Error from 'next/error';
 
+import Error from 'next/error';
 import Card from '../../components/Card/Card';
 import EditForm from '../../components/EditForm/EditForm';
+
 export default function AnnouncementDetailPage() {
 	const [announcementDetail, setAnnouncementDetail] = useState();
 	const router = useRouter();
 	const {id} = router.query;
 	const [showForm, setShowForm] = useState(false);
 	const { data: session, status } = useSession()
-
 
 	useEffect(() => {
 		const fetchData = async () => {

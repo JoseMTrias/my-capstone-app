@@ -1,5 +1,10 @@
 import Map from "../components/Map";
 
 export default function MapPage() {
-    return <Map></Map>
+    return (
+    <>
+    <h3>Locations</h3>
+    <Map></Map>
+    </>
+    )
 }

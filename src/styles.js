@@ -60,7 +60,7 @@ export const GlobalStyle = createGlobalStyle`
 
 	.map {
 		width: 100%;
-		height: 450px;
+		height: 400px;
 	}
 
 `;

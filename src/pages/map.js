@@ -3,7 +3,7 @@ import Map from "../components/Map";
 export default function MapPage() {
     return (
     <>
-    <h3>Locations</h3>
+    <h3 className="map-header">Locations</h3>
     <Map></Map>
     </>
     )

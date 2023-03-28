@@ -21,6 +21,7 @@ const StyledCard = styled.article`
 
 	a {
 		color: black;
+		padding-bottom: 10px;
 	}
 
 	.user-info {

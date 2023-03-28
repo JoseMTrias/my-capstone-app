@@ -13,6 +13,8 @@ export default function AnnouncementDetailPage() {
 	const [showForm, setShowForm] = useState(false);
 	const { data: session, status } = useSession()
 
+	console.log("announcementDetail", announcementDetail)
+
 	useEffect(() => {
 		const fetchData = async () => {
 			const announcementData = await fetch(`/api/announcements/${id}`);
@@ -26,7 +28,8 @@ export default function AnnouncementDetailPage() {
 		await fetch(`/api/announcements/${id}`, {
 			method: 'DELETE',
 		});
-		router.push('/');
+		alert("Announcement succesfully deleted!")
+		router.push(`/users/${announcementDetail.userId}`);
 	}
 
 	if(!announcementDetail) {

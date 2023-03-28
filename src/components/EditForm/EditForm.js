@@ -23,6 +23,7 @@ export default function EditForm({announcement}) {
 		});
 		if (response.ok) {
 			await response.json();
+			alert("Announcement succesfully edited!")
 			router.push(`/announcements/${announcement._id}`);
 		} else {
 			console.error(`Error: ${response.status}`);

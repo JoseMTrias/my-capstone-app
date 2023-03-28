@@ -13,8 +13,6 @@ export default function AnnouncementDetailPage() {
 	const [showForm, setShowForm] = useState(false);
 	const { data: session, status } = useSession()
 
-	console.log("announcementDetail", announcementDetail)
-
 	useEffect(() => {
 		const fetchData = async () => {
 			const announcementData = await fetch(`/api/announcements/${id}`);

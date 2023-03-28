@@ -31,13 +31,15 @@ export const Dropdown = styled.ul `
       display: inline-block;
       font-size: small;
 
+
       & > .dropdown-content {
         display: none;
         position: absolute;
         background-color: white;
-        min-width: 80px;
+        min-width: 100px;
         /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
         z-index: 1;
+
 
         & > a {
           color: black;
@@ -45,6 +47,8 @@ export const Dropdown = styled.ul `
           text-decoration: none;
           display: block;
           text-align: left;
+          background-color: #f4e158;
+
           &:hover {
             background-color: white;
           }

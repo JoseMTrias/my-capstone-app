@@ -78,6 +78,23 @@ export default function Map() {
                 </Popup>
             </Marker>
         </div>
+        <div>
+            <Marker position={[52.53030788915409, 13.385275240530538]}>
+                <Popup>
+                Super-Sessions Proberäume <br /> Rehearsal Room
+                </Popup>
+            </Marker>
+            <Marker position={[52.507274820757274, 13.455739289780476]}>
+                <Popup>
+                Noisy Rooms <br /> Rehearsal Room
+                </Popup>
+            </Marker>
+            <Marker position={[52.5169, 13.3091]}>
+                <Popup>
+                Band Proberäume Berlin-Musikschule <br /> Rehearsal Room
+                </Popup>
+            </Marker>
+        </div>
         </MapContainer>
     )
 }

@@ -14,7 +14,7 @@ const StyledCreateForm = styled.form`
 	box-shadow: 10px 10px 0px 0px #f4e158, -40px 37px 0px 30px rgba(0,0,0,0);
 
 	.button-create {
-		background-color: white;
+		background-color: #f4e158;
 		margin: 10px auto;
 		width: 100px;
 		height: 25px;

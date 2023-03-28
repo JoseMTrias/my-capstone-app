@@ -30,20 +30,22 @@ export const Dropdown = styled.ul `
   & > .dropdown {
       display: inline-block;
       font-size: small;
+      padding-bottom: 15px;
+
 
 
       & > .dropdown-content {
         display: none;
         position: absolute;
         background-color: white;
-        min-width: 100px;
-        /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+        min-width: 80px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
 
 
         & > a {
           color: black;
-          padding: 4px 12px;
+          padding: 4px 4px;
           text-decoration: none;
           display: block;
           text-align: left;

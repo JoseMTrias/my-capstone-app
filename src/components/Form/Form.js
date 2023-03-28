@@ -27,7 +27,7 @@ export default function Form() {
 	return (
 		<>
 			<StyledForm onSubmit={handleSubmit} className="search-form" action="/result" method="post">
-				<label htmlFor="instrument">Instrument:</label>
+				<label htmlFor="instrument">INSTRUMENT</label>
 				<select className="select" id="instrument" name="instrument" >
 					<option value="All">All</option>
 					<option value="Guitar">Guitar</option>
@@ -35,7 +35,8 @@ export default function Form() {
 					<option value="Drums">Drums</option>
 					<option value="Vocals">Vocals</option>
 				</select>
-				<label htmlFor="genre">Genre:</label>
+				<br></br>
+				<label htmlFor="genre">GENRE</label>
 				<select className="select" id="genre" name="genre">
 					<option value="All">All</option>
 					<option value="Rock">Rock</option>
@@ -46,8 +47,11 @@ export default function Form() {
 					<option value="Electronic">Electronic</option>
 					<option value="Classical">Classical</option>
 				</select>
-				<label htmlFor="Location">Location:</label>
+				<br></br>
+				<label htmlFor="Location">LOCATION</label>
 				<input className="select" type="text" id="location" name="location" placeholder='Enter City'></input>
+				<br></br>
+
 				<StyledButton type="submit" className="search-button">search</StyledButton>
 			</StyledForm>
 			{announcements.map(announcement => {

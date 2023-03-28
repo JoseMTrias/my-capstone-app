@@ -18,13 +18,15 @@ export const GlobalStyle = createGlobalStyle`
 	body {
 		margin: 0;
 		padding-top: 4em;
+		padding-bottom: 4em;
 		font-size: 1rem;
 		border-left: 10px;
 		font-size: 1rem;
-		color: black;
+		color: white;
 		background-color: white;
-		/* background-image: url('aptbs_fondo.jpg');
-		background-size: cover; */
+		background-image: url('aptbs_fondo1.jpg');
+		background-size: cover;
+		
 	}
 
 

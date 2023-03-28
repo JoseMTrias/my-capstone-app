@@ -7,7 +7,7 @@ export const Dropdown = styled.ul `
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: none;
 
   /* main LI */
   & > li {
@@ -15,13 +15,13 @@ export const Dropdown = styled.ul `
 
     & > a {
       display: inline-block;
-      color: black;
+      color: white;
       text-align: center;
       padding: 0.1px 6px;
       text-decoration: none;
 
       &:hover {
-        background-color: white;
+        background-color: none;
       }
     }
   }
@@ -37,7 +37,7 @@ export const Dropdown = styled.ul `
       & > .dropdown-content {
         display: none;
         position: absolute;
-        background-color: white;
+        background-color: none;
         min-width: 80px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
@@ -50,7 +50,6 @@ export const Dropdown = styled.ul `
           display: block;
           text-align: left;
           background-color: #f4e158;
-          backgroun
 
           &:hover {
             background-color: white;

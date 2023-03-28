@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledHeader = styled.header`
 	padding: 0.5em 1em;
-	background-color: white;
+	/* background-color: white; */
 	display: flex;
 	font-size: 1em;
 	justify-content: space-between;
@@ -37,7 +37,7 @@ const StyledHeader = styled.header`
 	div {
 		width: 22px;
 		height: 3px;
-		background-color: #303030;
+		background-color: white;
 		margin: 4px 0;
 		border-radius: 2px;
 	}

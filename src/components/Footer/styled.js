@@ -5,7 +5,7 @@ const StyledFooter = styled.footer`
 	/* border-top: 1px solid rgba(0, 0, 0, 0.3); */
 	/* background-color: black; */
 	color: white;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;

@@ -12,6 +12,7 @@ const StyledForm = styled.form`
 	font-family: Helvetica;
 	font-size: small;
 
+
 	.search-button {
 		background-color: #f4e158;
 		margin: 10px auto;
@@ -28,9 +29,6 @@ const StyledForm = styled.form`
   		border-radius: 2px;
 	}
 
-	.form-create {
-		color: red
-	}
 `;
 
 export default StyledForm;

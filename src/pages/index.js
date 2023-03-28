@@ -13,7 +13,7 @@ export default function HomePage() {
 				<title key="title">TheBandSeeds</title>
 				<meta key="description" name="description" content="This is my project" />
 			</Head>
-			<h2>Home</h2>
+			<h2>PLUG IN<br></br> TUNE UP<br></br> ROCK OUT!</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
 				dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,

@@ -33,7 +33,7 @@ export default function EditForm({announcement}) {
 	return (
 		<>
 			<StyledEditForm onSubmit={handleEdit}>
-				<label>Title:</label>
+				<label>TITLE</label>
 				<input
 					onChange={e =>
 						setEditAnnouncement({...editAnnouncement, title: e.target.value})
@@ -43,7 +43,7 @@ export default function EditForm({announcement}) {
 					name="title"
 					/>
 				<br></br>
-				<label>Instrument:</label>
+				<label>INSTRUMENT</label>
 				<input
 					onChange={e =>
 						setEditAnnouncement({...editAnnouncement, instrument: e.target.value})
@@ -53,7 +53,7 @@ export default function EditForm({announcement}) {
 					name="instrument"
 				/>
 				<br></br>
-				<label>Genre:</label>
+				<label>GENRE</label>
 				<input
 					onChange={e =>
 						setEditAnnouncement({...editAnnouncement, genre: e.target.value})
@@ -63,7 +63,7 @@ export default function EditForm({announcement}) {
 					name="genre"
 				/>
 				<br></br>
-				<label>Location:</label>
+				<label>LOCATION</label>
 					<input
 						onChange={e =>
 							setEditAnnouncement({...editAnnouncement, location: e.target.value})
@@ -73,7 +73,7 @@ export default function EditForm({announcement}) {
 						name="location"
 					/>
 				<br></br>
-				<p>Description:</p>
+				<label>DESCRIPTION</label>
 				<textarea className='text-area'
 					onChange={e =>
 						setEditAnnouncement({...editAnnouncement, description: e.target.value})
@@ -83,7 +83,7 @@ export default function EditForm({announcement}) {
 					value={editAnnouncement.description}
 				></textarea>
 				<br></br>
-				<StyledButton className='button-edit' type="submit" value="Update" >Update</StyledButton>
+				<StyledButton className='button-edit' type="submit" value="Update" >update</StyledButton>
 			</StyledEditForm>
 		</>
 	);

@@ -11,13 +11,11 @@ export const GlobalStyle = createGlobalStyle`
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16px;
 		font-family: Arial, Helvetica, sans-serif;
-
-
 	}
 
 	body {
 		margin: 0;
-		padding-top: 4em;
+		padding-top: 2em;
 		padding-bottom: 4em;
 		font-size: 1rem;
 		border-left: 10px;
@@ -46,8 +44,6 @@ export const GlobalStyle = createGlobalStyle`
 		margin: 50px;
 		padding: 0px 0 20px 0;
 		font-family: Helvetica;
-
-
 	}
 
 	.landing_page {
@@ -71,5 +67,8 @@ export const GlobalStyle = createGlobalStyle`
 		display: flex;
 		justify-content: center;
 	}
-
+	h2 {
+		color: #f4e158;
+		padding-top: 30px;
+	}
 `;

@@ -6,8 +6,10 @@ const StyledEditForm = styled.form`
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-top: 0;
+	color: black;
 	font-family: Helvetica;
-	font-size: small;
+	font-size: 0.75rem;
+	/* font-size: small; */
 	padding: 16px 32px 16px;
 	margin-bottom: 1.5em;
 	border: 1px solid black;

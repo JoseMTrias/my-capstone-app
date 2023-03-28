@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import LogoApp from "../../../public/logofinal.png"
+import LogoApp from "../../../public/trial4.png"
 import Image from 'next/image';
 import Dropdown from '../Dropdown/Dropdown';
 import StyledHeader from './styled';

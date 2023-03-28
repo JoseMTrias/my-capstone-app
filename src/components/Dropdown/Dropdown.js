@@ -17,7 +17,7 @@ export const Dropdown = styled.ul `
       display: inline-block;
       color: black;
       text-align: center;
-      padding: 8px 6px;
+      padding: 0.1px 6px;
       text-decoration: none;
 
       &:hover {
@@ -29,7 +29,7 @@ export const Dropdown = styled.ul `
   /* dropdown LI */
   & > .dropdown {
       display: inline-block;
-      font-size: medium;
+      font-size: small;
 
       & > .dropdown-content {
         display: none;

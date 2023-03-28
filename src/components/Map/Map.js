@@ -1,9 +1,15 @@
 import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import { MapContainer, TileLayer,  Marker, Popup} from 'react-leaflet'
+import L from "leaflet"
 import "leaflet/dist/leaflet.css";
 
 export default function Map() {
+
+    // const markerIcon = new L.Icon({
+    //     iconUrl: require("../Map/Icon/mapmarker.png"),
+    //     iconSize: [50, 82]
+    // })
 
     return (
         <MapContainer className="map" center={[52.5200, 13.4050]} zoom={11} scrollWheelZoom={false} >
@@ -11,7 +17,6 @@ export default function Map() {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <div>
             <Marker position={[52.4966, 13.4221]}>
                 <Popup>
                 SO36 <br /> Concert Hall
@@ -77,8 +82,6 @@ export default function Map() {
                 Schokoladen <br /> Concert Hall
                 </Popup>
             </Marker>
-        </div>
-        <div>
             <Marker position={[52.53030788915409, 13.385275240530538]}>
                 <Popup>
                 Super-Sessions Proberäume <br /> Rehearsal Room
@@ -94,7 +97,6 @@ export default function Map() {
                 Band Proberäume Berlin-Musikschule <br /> Rehearsal Room
                 </Popup>
             </Marker>
-        </div>
         </MapContainer>
     )
 }

@@ -57,4 +57,9 @@ export const GlobalStyle = createGlobalStyle`
 	a {
 		text-decoration: none
 	}
+
+	.map {
+		width: 100%;
+		height: 450px;
+	}
 `;

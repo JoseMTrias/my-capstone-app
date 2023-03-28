@@ -11,6 +11,8 @@ export const GlobalStyle = createGlobalStyle`
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16px;
 		font-family: Arial, Helvetica, sans-serif;
+
+
 	}
 
 	body {
@@ -21,12 +23,16 @@ export const GlobalStyle = createGlobalStyle`
 		font-size: 1rem;
 		color: black;
 		background-color: white;
-		
+		/* background-image: url('aptbs_fondo.jpg');
+		background-size: cover; */
+	}
+
+
 	link.user-profile {
 		text-decoration: underline;
 	}
 
-	}
+	
 	main {
 		padding: 1em;
 		display: flex;
@@ -39,6 +45,7 @@ export const GlobalStyle = createGlobalStyle`
 		padding: 0px 0 20px 0;
 		font-family: Helvetica;
 
+
 	}
 
 	.landing_page {
@@ -46,10 +53,21 @@ export const GlobalStyle = createGlobalStyle`
 		justify-content: center;
 		gap: 5rem;
 		padding-top: 1em;
-		
-		
 	}
 	a {
 		text-decoration: none
 	}
+
+	.map {
+		width: 100%;
+		height: 400px;
+		border: 1px solid black;
+		box-shadow: 10px 10px 0px 0px #f4e158, -40px 37px 0px 30px rgba(0,0,0,0);
+
+	}
+	.map-header {
+		display: flex;
+		justify-content: center;
+	}
+
 `;

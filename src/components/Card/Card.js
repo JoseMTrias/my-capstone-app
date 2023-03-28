@@ -15,10 +15,6 @@ export default function Card({
 	session
 }) {	
 
-	console.log("session user ID: ", session.user.id)
-	console.log("user ID", userId)
-
-
 	return (
 			<StyledCard>
 				{userId? <a href={`/users/${userId}`}>User: {user}</a>: ""}
@@ -28,15 +24,12 @@ export default function Card({
 				<p>Genre: {genre}</p>
 				<p>Instrument: {instrument}</p>
 				<p>Location: {location}</p>
-				{session.user.id === userId? <div className='buttons'>
+				{session?.user.id === userId? <div className='buttons'>
 					<StyledButton className='button-edit' onClick={onEdit} >edit</StyledButton>
 					<StyledButton className='button-delete' onClick={onDelete} deleteButton="button_delete">
 						delete
 					</StyledButton>
 				</div> : null}
-
-				
-				
 			</StyledCard>
 		);
 	}

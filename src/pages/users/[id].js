@@ -5,7 +5,6 @@ import StyledCard from '../../components/Card/styled'
 import Link from 'next/link'
 import StyledButton from '../../components/Button/styled'
 
-
 export default function profilePage() {
   const { data: session, status } = useSession()
   const [announcements, setAnnouncements] = useState([])

@@ -37,12 +37,17 @@ const StyledCard = styled.article`
 	.user-email {
 		border-bottom: 1px solid #f4e158;
 		right: 0;
+		height: 70px;
 	}
 
 	.user-announcements-ul {
 		margin: 0 0 20px 0;
 		border-bottom: 1px solid #f4e158;
-		padding-left: 0;
+		padding-left: 15px;
+	}
+
+	.email-link {
+		text-decoration: underline;
 	}
 
 	.link-user {

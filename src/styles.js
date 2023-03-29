@@ -70,4 +70,10 @@ export const GlobalStyle = createGlobalStyle`
 		margin-top: 2em;
 		margin-bottom: 0;
 	}
+	.ad-profile-header {
+		margin-top: 15px;
+		display: flex;
+		justify-content: center
+	}
 `;
+

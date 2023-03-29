@@ -20,6 +20,7 @@ const StyledButton = styled.button`
 		color: black;
 		font-size: 0.8em;
 		width: 55px;
+		display: flex;
 	}
 
 	&.create-new {

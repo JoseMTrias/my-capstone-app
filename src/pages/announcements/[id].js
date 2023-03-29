@@ -36,7 +36,7 @@ export default function AnnouncementDetailPage() {
 
 	return (
 		<div >
-			<h3>Announcement Profile</h3>
+			<h3 className='ad-profile-header'>Announcement Profile</h3>
 			<Card
 				id={announcementDetail._id}
 				date={announcementDetail.date}

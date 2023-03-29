@@ -5,7 +5,7 @@ const StyledCard = styled.article`
 	padding: 16px 32px 16px;
 	height: 90%;
 	margin-bottom: 1.5em;
-	margin-top: 2.5em;
+	margin-top: 1em;
 	color: black;
 	display: flex;
 	flex-direction: column;
@@ -17,7 +17,8 @@ const StyledCard = styled.article`
 	.buttons {
 		display: flex;
     	flex-direction: row;
-    	justify-content: flex-end;
+    	/* justify-content: flex-end; */
+		justify-content: end;
 	}
 	.user_profile {
 		text-decoration: underline;
@@ -44,6 +45,10 @@ const StyledCard = styled.article`
 
 	.link-user {
 		text-decoration: underline;
+	}
+	.sign-out {
+		display: flex;
+		justify-self: end;
 	}
 `;
 

@@ -52,7 +52,7 @@ export default function profilePage() {
           <h4 className='user-info'>USER INFO</h4>
           <section className='user-email'>
           <p>{user.name} </p>
-          <a href={`mailto:${user.email}`} className="email-link">{user.email}</a>
+          <a href={`mailto:${user.email}`} className="email-link">Contact</a>
           </section>
           <br></br>
             <StyledButton  className='sign-out' onClick={() => signOut()}>sign out</StyledButton>

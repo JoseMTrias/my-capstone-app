@@ -42,6 +42,7 @@ const StyledCard = styled.article`
 	.user-announcements-ul {
 		margin: 0 0 20px 0;
 		border-bottom: 1px solid #f4e158;
+		padding-left: 0;
 	}
 
 	.link-user {

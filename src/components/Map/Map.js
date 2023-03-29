@@ -97,6 +97,11 @@ export default function Map() {
                 <a href="https://www.berlin-musikschule.com/proberaeume/bandproberaeume.html">Band Proberäume Berlin-Musikschule</a> <br /> Rehearsal Room
                 </Popup>
             </Marker>
+            <Marker position={[52.5312, 13.4115]}>
+                <Popup>
+                <a href="https://www.8mmbar.de/">8mm bar</a> <br /> Concert Hall
+                </Popup>
+            </Marker>
         </MapContainer>
     )
 }

@@ -69,7 +69,7 @@ export const GlobalStyle = createGlobalStyle`
 		display: flex;
 		justify-content: center;
 	}
-	h2 {
+	.slogan {
 		color: #f4e158;
 		padding-top: 30px;
 	}

@@ -31,6 +31,7 @@ const StyledCard = styled.article`
 
 	.user-info {
 		margin-bottom: 0;
+		/* margin-top: 5px; */
 	}
 	
 	.user-email {

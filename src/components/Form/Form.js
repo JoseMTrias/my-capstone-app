@@ -35,7 +35,7 @@ export default function Form() {
 			<StyledForm onSubmit={handleSubmit} className="search-form" action="/result" method="post">
 				<label htmlFor="instrument">INSTRUMENT</label>
 				<select className="select" id="instrument" name="instrument" >
-				<option disabled selected value> -- select an option -- </option>
+					<option disabled selected value> -- select an option -- </option>
 					<option value="Guitar">Guitar</option>
 					<option value="Bass">Bass</option>
 					<option value="Drums">Drums</option>
@@ -44,7 +44,7 @@ export default function Form() {
 				<br></br>
 				<label htmlFor="genre">GENRE</label>
 				<select className="select" id="genre" name="genre">
-				<option disabled selected value> -- select an option -- </option>
+					<option disabled selected value> -- select an option -- </option>
 					<option value="Rock">Rock</option>
 					<option value="Shoegaze">Shoegaze</option>
 					<option value="Pop">Pop</option>

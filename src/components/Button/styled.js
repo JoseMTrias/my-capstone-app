@@ -21,6 +21,7 @@ const StyledButton = styled.button`
 		font-size: 0.8em;
 		width: 55px;
 		display: flex;
+		justify-content: center
 	}
 
 	&.create-new {

@@ -44,24 +44,45 @@ export default function EditForm({announcement}) {
 					/>
 				<br></br>
 				<label>INSTRUMENT</label>
-				<input
+				<select className="select" id="instrument" name="instrument" onChange={e =>
+						setEditAnnouncement({...editAnnouncement, instrument: e.target.value})
+					}>
+					<option disabled selected value> -- select an option -- </option>
+					<option value="Guitar">Guitar</option>
+					<option value="Bass">Bass</option>
+					<option value="Drums">Drums</option>
+					<option value="Vocals">Vocals</option>
+				</select>
+				{/* <input
 					onChange={e =>
 						setEditAnnouncement({...editAnnouncement, instrument: e.target.value})
 					}
 					value={editAnnouncement.instrument}
 					type="text"
 					name="instrument"
-				/>
+				/> */}
 				<br></br>
 				<label>GENRE</label>
-				<input
+				<select className="select" id="genre" name="genre" onChange={e =>
+						setEditAnnouncement({...editAnnouncement, genre: e.target.value})
+					}>
+					<option disabled selected value> -- select an option -- </option>
+					<option value="Rock">Rock</option>
+					<option value="Shoegaze">Shoegaze</option>
+					<option value="Pop">Pop</option>
+					<option value="Jazz">Jazz</option>
+					<option value="Funk">Funk</option>
+					<option value="Electronic">Electronic</option>
+					<option value="Classical">Classical</option>
+				</select>
+				{/* <input
 					onChange={e =>
 						setEditAnnouncement({...editAnnouncement, genre: e.target.value})
 					}
 					value={editAnnouncement.genre}
 					type="text"
 					name="genre"
-				/>
+				/> */}
 				<br></br>
 				<label>LOCATION</label>
 					<input

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
-	padding: 0.5em 1em;
+	padding: 8px 10px;
 	/* background-color: white; */
 	display: flex;
 	font-size: 1em;
@@ -40,6 +40,10 @@ const StyledHeader = styled.header`
 		background-color: white;
 		margin: 4px 0;
 		border-radius: 2px;
+	}
+
+	.header-logo {
+		border: 2px solid red
 	}
 `;
 

@@ -21,9 +21,11 @@ export const GlobalStyle = createGlobalStyle`
 		border-left: 10px;
 		font-size: 1rem;
 		color: white;
-		background-color: white;
+		/* background-color: white; */
 		background-image: url('aptbs_fondo1.jpg');
 		background-size: cover;
+		background-attachment: fixed;
+		
 		
 	}
 

@@ -16,12 +16,8 @@ export default function HomePage() {
 			<h2>PLUG IN<br></br> TUNE UP<br></br> ROCK OUT!</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-				dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-				nascetur ridiculus mus. Donec quam felis,
+				dolor. Aenean massa. 
 			</p>
-			<section className="landing_page">
-
-			</section>
 			<br />
 		</>
 	);

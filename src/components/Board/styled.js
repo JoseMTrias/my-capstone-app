@@ -8,14 +8,14 @@ const StyledBoard = styled.article`
 	background-color: white;
 	box-shadow: 3px 3px 0px 0px #f4e158, -40px 37px 0px 30px rgba(0,0,0,0);
 	opacity: 90%;
+	width: 90%;
 
 	ul {
     list-style-type: square;
 	display: flex;
 	align-items: center;
 	border-color: lightgray;
-	border-radius: 5px;
-	background-color: white;
+	border-radius: 5px;	
 	}
 
 	a {

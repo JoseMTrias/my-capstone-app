@@ -26,11 +26,7 @@ export const GlobalStyle = createGlobalStyle`
 		background-attachment: fixed;
 	}
 	
-	.main-test {
-		background-image: url('aptbs_fondo1.jpg');
-		background-size: cover;
-		background-attachment: fixed;
-	}
+
 
 	main {
 		padding: 1em;

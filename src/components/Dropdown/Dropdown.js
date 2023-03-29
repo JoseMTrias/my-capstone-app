@@ -48,7 +48,7 @@ export const Dropdown = styled.ul `
           text-decoration: none;
           display: block;
           text-align: left;
-          background-color: #f4e158;
+          /* background-color: #f4e158; */
           opacity: 95%;
 
 

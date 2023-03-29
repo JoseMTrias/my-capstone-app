@@ -22,14 +22,20 @@ export default function Form() {
 
 		const response = await fetch('/api/announcements');
 		const allAnnouncements = await response.json();
-		setAnnouncements(allAnnouncements);
+		const sortedAnnouncements = allAnnouncements.sort(function (a, b) {
+			return (a.createdAt > b.createdAt) ? -1 : ((a.createdAt < b.createdAt) ? 1 : 0);
+		  });
+		setAnnouncements(sortedAnnouncements);
 	};
+
+	
+
 	return (
 		<>
 			<StyledForm onSubmit={handleSubmit} className="search-form" action="/result" method="post">
 				<label htmlFor="instrument">INSTRUMENT</label>
 				<select className="select" id="instrument" name="instrument" >
-					<option value="All">All</option>
+				<option disabled selected value> -- select an option -- </option>
 					<option value="Guitar">Guitar</option>
 					<option value="Bass">Bass</option>
 					<option value="Drums">Drums</option>
@@ -38,7 +44,7 @@ export default function Form() {
 				<br></br>
 				<label htmlFor="genre">GENRE</label>
 				<select className="select" id="genre" name="genre">
-					<option value="All">All</option>
+				<option disabled selected value> -- select an option -- </option>
 					<option value="Rock">Rock</option>
 					<option value="Shoegaze">Shoegaze</option>
 					<option value="Pop">Pop</option>
@@ -69,11 +75,12 @@ export default function Form() {
 					);
 				}
 			})}
-			{formInfo.instrument === 'All' &&
+			{/* {formInfo.instrument === 'All' &&
 				formInfo.genre === 'All' &&
 				announcements.map(announcement => {
 					{
 						return (
+							
 							<Board
 								key={announcement._id}
 								title={announcement.title}
@@ -81,7 +88,7 @@ export default function Form() {
 							></Board>
 						);
 					}
-				})}
+				})} */}
 		</>
 	);
 }

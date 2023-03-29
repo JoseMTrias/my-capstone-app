@@ -5,7 +5,6 @@ const StyledCard = styled.article`
 	padding: 16px 32px 16px;
 	height: 90%;
 	margin-bottom: 1.5em;
-	/* margin-top: 3.5em; */
 	color: black;
 	display: flex;
 	flex-direction: column;
@@ -13,7 +12,6 @@ const StyledCard = styled.article`
 	box-shadow: 10px 10px 0px 0px #f4e158, -40px 37px 0px 30px rgba(0,0,0,0);
 	background-color: white;
 	opacity: 95%;
-	z-index: -1;
 	
 	.buttons {
 		display: flex;

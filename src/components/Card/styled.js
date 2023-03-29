@@ -5,6 +5,7 @@ const StyledCard = styled.article`
 	padding: 16px 32px 16px;
 	height: 90%;
 	margin-bottom: 1.5em;
+	margin-top: 2.5em;
 	color: black;
 	display: flex;
 	flex-direction: column;

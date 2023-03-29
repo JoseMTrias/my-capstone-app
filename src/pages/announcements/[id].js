@@ -35,8 +35,8 @@ export default function AnnouncementDetailPage() {
 	}
 
 	return (
-		<div className='div-test'>
-			<h4>Announcement Profile</h4>
+		<div >
+			<h3>Announcement Profile</h3>
 			<Card
 				id={announcementDetail._id}
 				date={announcementDetail.date}
@@ -52,7 +52,6 @@ export default function AnnouncementDetailPage() {
 				session={session}
 			></Card>
 			{showForm && <EditForm announcement={announcementDetail} />}
-			<br></br>
 			<br></br>
 		</div>
 	);

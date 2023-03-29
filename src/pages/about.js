@@ -7,7 +7,7 @@ export default function AboutPage() {
 				<title key="title">About</title>
 				<meta key="description" name="description" content="About" />
 			</Head>
-			<h2>About</h2>
+			<h3 className='about-header'>About</h3>
 			<p>
 				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
 				dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,

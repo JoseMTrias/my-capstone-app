@@ -37,14 +37,13 @@ export const Dropdown = styled.ul `
         display: none;
         position: absolute;
         background-color: white;
-        min-width: 80px;
+        width: 0px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
 
-
         & > a {
           color: white;
-          padding: 4px 4px;
+          padding: 3px 3px;
           text-decoration: none;
           display: block;
           text-align: left;

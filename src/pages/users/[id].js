@@ -57,7 +57,6 @@ export default function profilePage() {
           <br></br>
             <StyledButton  className='sign-out' onClick={() => signOut()}>sign out</StyledButton>
             </StyledCard>
-          <br></br>
           <StyledCard>
           <h4>USER ANNOUNCEMENTS</h4>
           <ul className='user-announcements-ul'>

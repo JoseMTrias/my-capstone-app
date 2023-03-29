@@ -66,4 +66,8 @@ export const GlobalStyle = createGlobalStyle`
 		color: #f4e158;
 		padding-top: 30px;
 	}
+	.about-header {
+		margin-top: 2em;
+		margin-bottom: 0;
+	}
 `;

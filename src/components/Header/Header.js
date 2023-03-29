@@ -17,7 +17,6 @@ export default function Header() {
       				<div className="dropdown-content">
         				<a href="/search">SEARCH</a>
 						<a href="/map">LOCATIONS</a>
-
        					<a href="/about">ABOUT</a>
       				</div>
     			</li>

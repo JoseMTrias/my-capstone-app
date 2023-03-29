@@ -19,82 +19,82 @@ export default function Map() {
         />
             <Marker position={[52.4966, 13.4221]}>
                 <Popup>
-                SO36 <br /> Concert Hall
+                <a href="https://www.so36.com/tickets">SO36</a> <br /> Concert Hall
                 </Popup>
             </Marker>
             <Marker position={[52.5004, 13.4518]}>
                 <Popup>
-                Festaal Kreuzberg <br /> Concert Hall
+                <a href="https://festsaal-kreuzberg.de/">Festaal Kreuzberg</a> <br /> Concert Hall
                 </Popup>
             </Marker>
             <Marker position={[52.5077, 13.4519]}>
                 <Popup>
-                Astra Kulturhaus <br /> Concert Hall
+                <a href="https://www.astra-berlin.de/">Astra Kulturhaus </a> <br /> Concert Hall
                 </Popup>
             </Marker>
             <Marker position={[52.5073, 13.4548]}>
                 <Popup>
-                Cassiopeia <br /> Concert Hall
+                <a href="https://www.cassiopeia-berlin.de/">Cassiopeia</a> <br /> Concert Hall
                 </Popup>
             </Marker>
             <Marker position={[52.5078, 13.4516]}>
                 <Popup>
-                Urban Spree <br /> Concert Hall
+                <a href="https://www.urbanspree.com/">Urban Spree</a> <br /> Concert Hall
                 </Popup>
             </Marker>
             <Marker position={[52.4800, 13.5003]}>
                 <Popup>
-                Funkhaus <br /> Concert Hall
+                <a href="https://www.funkhaus-berlin.net/">Funkhaus</a> <br /> Concert Hall
                 </Popup>
             </Marker>
             <Marker position={[52.4869, 13.4214]}>
                 <Popup>
-                Huxleys Neue Welt <br /> Concert Hall
+                <a href="https://huxleysneuewelt.com/">Huxleys Neue Welt</a> <br /> Concert Hall
                 </Popup>
             </Marker>
             <Marker position={[52.5382, 13.4127]}>
                 <Popup>
-                Kulturbrauerei <br /> Concert Hall
+                <a href="https://www.kulturbrauerei.de/">Kulturbrauerei</a> <br /> Concert Hall
                 </Popup>
             </Marker>
             <Marker position={[52.5063, 13.4436]}>
                 <Popup>
-                Mercedes-Benza-Arena <br /> Concert Hall
+                <a href="https://www.mercedes-benz-arena-berlin.de/">Mercedes-Benza-Arena</a> <br /> Concert Hall
                 </Popup>
             </Marker>
             <Marker position={[52.5016, 13.3812]}>
                 <Popup>
-                Tempodrom Berlin <br /> Concert Hall
+                <a href="https://www.tempodrom.de/">Tempodrom Berlin</a> <br /> Concert Hall
                 </Popup>
             </Marker>
             <Marker position={[52.4807, 13.4330]}>
                 <Popup>
-                Loophole <br /> Concert Hall
+                <a href="https://www.facebook.com/berlin.loophole/?locale=de_DE">Loophole</a> <br /> Concert Hall
                 </Popup>
             </Marker>
             <Marker position={[52.5449, 13.4043]}>
                 <Popup>
-                Max-Schmeling-Halle <br /> Concert Hall
+                <a href="https://www.max-schmeling-halle.de/">Max-Schmeling-Halle</a> <br /> Concert Hall
                 </Popup>
             </Marker>
             <Marker position={[52.5298, 13.3971]}>
                 <Popup>
-                Schokoladen <br /> Concert Hall
+                <a href="https://www.schokoladen-mitte.de/">Schokoladen</a> <br /> Concert Hall
                 </Popup>
             </Marker>
             <Marker position={[52.53030788915409, 13.385275240530538]}>
                 <Popup>
-                Super-Sessions Proberäume <br /> Rehearsal Room
+                <a href="https://super-sessions.de/">Super-Sessions Proberäume</a> <br /> Rehearsal Room
                 </Popup>
             </Marker>
             <Marker position={[52.507274820757274, 13.455739289780476]}>
                 <Popup>
-                Noisy Rooms <br /> Rehearsal Room
+                <a href="https://noisy-rooms.com/">Noisy Rooms</a> <br /> Rehearsal Room
                 </Popup>
             </Marker>
             <Marker position={[52.5169, 13.3091]}>
                 <Popup>
-                Band Proberäume Berlin-Musikschule <br /> Rehearsal Room
+                <a href="https://www.berlin-musikschule.com/proberaeume/bandproberaeume.html">Band Proberäume Berlin-Musikschule</a> <br /> Rehearsal Room
                 </Popup>
             </Marker>
         </MapContainer>

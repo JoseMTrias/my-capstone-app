@@ -38,7 +38,10 @@ const StyledCard = styled.article`
 		margin: 0 0 20px 0;
 		border-bottom: 1px solid #f4e158;
 	}
+
+	.link-user {
+		text-decoration: underline;
+	}
 `;
 
 export default StyledCard;
-

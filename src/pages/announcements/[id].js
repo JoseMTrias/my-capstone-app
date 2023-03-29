@@ -35,7 +35,7 @@ export default function AnnouncementDetailPage() {
 	}
 
 	return (
-		<div>
+		<div className='div-test'>
 			<h4>Announcement Profile</h4>
 			<Card
 				id={announcementDetail._id}

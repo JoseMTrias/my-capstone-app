@@ -17,7 +17,7 @@ export default function Card({
 
 	return (
 			<StyledCard>
-				{userId? <a href={`/users/${userId}`}><b>USER</b><br></br> {user}</a>: ""}
+				{userId? <a className='link-user' href={`/users/${userId}`}><b>USER</b><br></br> {user}</a>: ""}
 				<p><b>TITLE</b><br></br> {title}</p>
 				<p><b>DATE</b><br></br> {date}</p>
 				<p><b>DESCRIPTION</b><br></br> {description}</p>

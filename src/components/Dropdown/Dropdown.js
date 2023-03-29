@@ -44,12 +44,13 @@ export const Dropdown = styled.ul `
 
 
         & > a {
-          color: black;
+          color: white;
           padding: 4px 4px;
           text-decoration: none;
           display: block;
           text-align: left;
-          background-color: #f4e158;
+          /* background-color: #f4e158; */
+
 
           &:hover {
             background-color: white;

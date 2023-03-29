@@ -43,10 +43,10 @@ export default function CreateForm() {
 	return (
 		<>
 			<StyledCreateForm onSubmit={handleSubmit}>
-				<label>Title:</label>
+				<label>TITLE</label>
 				<input type="text" name="title" />
 				<br></br>
-				<label>Instrument:</label>
+				<label>INSTRUMENT</label>
 				<select className="select" id="instrument" name="instrument" >
 					<option value="All">All</option>
 					<option value="Guitar">Guitar</option>
@@ -55,7 +55,7 @@ export default function CreateForm() {
 					<option value="Vocals">Vocals</option>
 				</select>
 				<br></br>
-				<label>Genre:</label>
+				<label>GENRE</label>
 				<select className="select" id="genre" name="genre">
 					<option value="All">All</option>
 					<option value="Rock">Rock</option>
@@ -67,10 +67,10 @@ export default function CreateForm() {
 					<option value="Classical">Classical</option>
 				</select>
 				<br></br>
-				<label>Location:</label>
+				<label>LOCATION</label>
 				<input type="text" name="location" />
 				<br></br>
-				<label>Description:</label>
+				<label>DESCRIPTION</label>
 				<textarea className='text-area' type="text" name="description"></textarea>
 				<br></br>
 				<StyledButton className='button-create' type="submit" value="Create">create</StyledButton>

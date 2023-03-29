@@ -10,6 +10,8 @@ const StyledCard = styled.article`
 	flex-direction: column;
 	border: 1px solid black;
 	box-shadow: 10px 10px 0px 0px #f4e158, -40px 37px 0px 30px rgba(0,0,0,0);
+	background-color: white;
+	opacity: 95%;
 	
 	.buttons {
 		display: flex;

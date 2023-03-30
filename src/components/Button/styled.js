@@ -65,6 +65,15 @@ const StyledButton = styled.button`
 	&:active {
 		/* background: #bad; */
 	}
+
+	&.button-contact {
+		margin: 0px 2px 2px 6px;
+		background-color: #f4e158;
+		border: #f4e158 1px solid;
+		color: black;
+		font-size: 0.8em;
+		width: 50px;
+	}
 `;
 
 export default StyledButton;

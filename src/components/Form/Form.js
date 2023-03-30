@@ -28,8 +28,6 @@ export default function Form() {
 		setAnnouncements(sortedAnnouncements);
 	};
 
-	
-
 	return (
 		<>
 			<StyledForm onSubmit={handleSubmit} className="search-form" action="/result" method="post">
@@ -76,6 +74,7 @@ export default function Form() {
 					);
 				} 
 			})}
+
 		</>
 	);
 }

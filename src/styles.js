@@ -78,5 +78,9 @@ export const GlobalStyle = createGlobalStyle`
 		justify-content: center
 	}
 
+	.footer-link-text {
+		color: white;
+	}
+
 `;
 

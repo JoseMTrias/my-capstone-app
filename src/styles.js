@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
 	html {
 		font-family: Arial, Helvetica, sans-serif;
-		font-size: 16px;
+		font-size: 14px;
 		font-family: Arial, Helvetica, sans-serif;
 	}
 
@@ -83,7 +83,8 @@ export const GlobalStyle = createGlobalStyle`
 	.ad-profile-header {
 		margin-top: 15px;
 		display: flex;
-		justify-content: center
+		justify-content: center;
+		color: #f4e158
 	}
 
 	.footer-link-text {
@@ -91,11 +92,15 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	.p-text-landingpage {
-		text-align: justify;
+		text-align: left;
 	}
-	.about-text {
-		text-align: justify;
 
+	.about-contact-text {
+		color: black;
+	}
+
+	.contact-button-link {
+		color: black;
 	}
 
 `;

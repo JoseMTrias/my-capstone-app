@@ -16,7 +16,7 @@ export default function HomePage() {
 			<h2 className='slogan'>PLUG IN<br></br> TUNE UP<br></br> ROCK OUT!</h2>
 			<p className='p-text-landingpage'>
 			Sign in, post your announcements and connect with musicians and mindliked people!
-The Band Seed´s  interactive Location Map leads you to music venues and rehearsal rooms all around your city!			</p>
+The Band Seed's location map leads you to music venues and rehearsal rooms all around your city!			</p>
 			<br />
 		</>
 	);

@@ -31,7 +31,7 @@ export default function AnnouncementDetailPage() {
 	}
 
 	if(!announcementDetail) {
-		return <Error statusCode={404}></Error>
+		return <p>Loading...</p>
 	}
 
 	return (

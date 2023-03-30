@@ -52,7 +52,7 @@ export const GlobalStyle = createGlobalStyle`
 
 	.map {
 		width: 100%;
-		height: 400px;
+		height: 350px;
 		border: 1px solid black;
 		box-shadow: 10px 10px 0px 0px #f4e158, -40px 37px 0px 30px rgba(0,0,0,0);
 	}
@@ -76,6 +76,10 @@ export const GlobalStyle = createGlobalStyle`
 		margin-top: 15px;
 		display: flex;
 		justify-content: center
+	}
+
+	.footer-link-text {
+		color: white;
 	}
 
 `;

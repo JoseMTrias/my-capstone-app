@@ -41,7 +41,6 @@ export default function Form() {
 					<option value="Drums">Drums</option>
 					<option value="Vocals">Vocals</option>
 				</select>
-				<br></br>
 				<label htmlFor="genre">GENRE</label>
 				<select className="select" id="genre" name="genre">
 					<option disabled selected value> -- select an option -- </option>
@@ -53,7 +52,6 @@ export default function Form() {
 					<option value="Electronic">Electronic</option>
 					<option value="Classical">Classical</option>
 				</select>
-				<br></br>
 				<label htmlFor="Location">LOCATION</label>
 				<select className="select" id="location" name="location">
 					<option disabled selected value> -- select an option -- </option>

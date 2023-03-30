@@ -14,7 +14,7 @@ export default function Card({
 	onDelete,
 	session
 }) {	
-	console.log("genre:", genre)
+
 	return (
 			<StyledCard>
 				{userId? <a className='link-user' href={`/users/${userId}`}><b>USER</b><br></br> {user}</a>: ""}

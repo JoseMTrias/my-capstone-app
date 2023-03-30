@@ -34,19 +34,17 @@ export default function profilePage() {
   useEffect(() => {
       async function getUser() {
        try {
-         const usersData = await fetch(`/api/users/${id}`)
-         const user = await usersData.json()
-         setUser(user)
+        if (id) {
+          const usersData = await fetch(`/api/users/${id}`)
+          const user = await usersData.json()
+          setUser(user)
+        }
        } catch (error) {
          console.log(error)
        }
      }
      getUser()
   }, [id])
-
-  console.log("sesssssion: ", session)
-  console.log("user: ", user)
-
 
   if (user) {
     return (

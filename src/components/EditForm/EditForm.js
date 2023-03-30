@@ -46,7 +46,8 @@ export default function EditForm({announcement}) {
 				<label>INSTRUMENT</label>
 				<select className="select" id="instrument" name="instrument" onChange={e =>
 						setEditAnnouncement({...editAnnouncement, instrument: e.target.value})
-					}>
+					} 					value={editAnnouncement.instrument}
+					>
 					<option disabled selected value> -- select an option -- </option>
 					<option value="Guitar">Guitar</option>
 					<option value="Bass">Bass</option>
@@ -65,7 +66,8 @@ export default function EditForm({announcement}) {
 				<label>GENRE</label>
 				<select className="select" id="genre" name="genre" onChange={e =>
 						setEditAnnouncement({...editAnnouncement, genre: e.target.value})
-					}>
+					} 					value={editAnnouncement.genre}
+					>
 					<option disabled selected value> -- select an option -- </option>
 					<option value="Rock">Rock</option>
 					<option value="Shoegaze">Shoegaze</option>
@@ -85,14 +87,21 @@ export default function EditForm({announcement}) {
 				/> */}
 				<br></br>
 				<label>LOCATION</label>
-					<input
+				<select className="select" id="genre" name="genre" onChange={e =>
+							setEditAnnouncement({...editAnnouncement, location: e.target.value})
+						} 						value={editAnnouncement.location}
+						>
+					<option disabled selected value> -- select an option -- </option>
+					<option value="Berlin">Berlin</option>
+				</select>
+					{/* <input
 						onChange={e =>
 							setEditAnnouncement({...editAnnouncement, location: e.target.value})
 						}
 						value={editAnnouncement.location}
 						type="text"
 						name="location"
-					/>
+					/> */}
 				<br></br>
 				<label>DESCRIPTION</label>
 				<textarea className='text-area'

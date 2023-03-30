@@ -48,7 +48,7 @@ export default function CreateForm() {
 				<br></br>
 				<label>INSTRUMENT</label>
 				<select className="select" id="instrument" name="instrument" >
-					<option value="All">All</option>
+					<option disabled selected value> -- select an option -- </option>
 					<option value="Guitar">Guitar</option>
 					<option value="Bass">Bass</option>
 					<option value="Drums">Drums</option>
@@ -57,7 +57,7 @@ export default function CreateForm() {
 				<br></br>
 				<label>GENRE</label>
 				<select className="select" id="genre" name="genre">
-					<option value="All">All</option>
+					<option disabled selected value> -- select an option -- </option>
 					<option value="Rock">Rock</option>
 					<option value="Shoegaze">Shoegaze</option>
 					<option value="Pop">Pop</option>
@@ -68,7 +68,10 @@ export default function CreateForm() {
 				</select>
 				<br></br>
 				<label>LOCATION</label>
-				<input type="text" name="location" />
+				<select className="select" id="location" name="location">
+					<option disabled selected value> -- select an option -- </option>
+					<option value="Berlin">Berlin</option>
+				</select>
 				<br></br>
 				<label>DESCRIPTION</label>
 				<textarea className='text-area' type="text" name="description"></textarea>

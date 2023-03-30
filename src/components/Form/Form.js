@@ -55,7 +55,10 @@ export default function Form() {
 				</select>
 				<br></br>
 				<label htmlFor="Location">LOCATION</label>
-				<input className="select" type="text" id="location" name="location" placeholder='Enter City'></input>
+				<select className="select" id="location" name="location">
+					<option disabled selected value> -- select an option -- </option>
+					<option value="Berlin">Berlin</option>
+				</select>
 				<br></br>
 
 				<StyledButton type="submit" className="search-button">search</StyledButton>

@@ -11,7 +11,6 @@ export default function profilePage() {
   const [user, setUser] = useState()
   const router = useRouter()
   const {id} = router.query
-  // const [filteredAnnouncements, setFilteredAnnouncements] = useState()
 
   useEffect(() => {
     async function getAnnouncements() {
@@ -45,7 +44,11 @@ export default function profilePage() {
      getUser()
   }, [id])
 
-  if (status === "authenticated" && user) {
+  console.log("sesssssion: ", session)
+  console.log("user: ", user)
+
+
+  if (user) {
     return (
       <>
         <StyledCard className='user-info'>
@@ -55,7 +58,8 @@ export default function profilePage() {
           <a href={`mailto:${user.email}`} className="email-link">Contact</a>
           </section>
           <br></br>
-            <StyledButton  className='sign-out' onClick={() => signOut()}>sign out</StyledButton>
+          {session?.user.id === user._id? 
+          <StyledButton  className='sign-out' onClick={() => signOut()}>sign out</StyledButton> : null}
             </StyledCard>
           <StyledCard>
           <h4>USER ANNOUNCEMENTS</h4>
@@ -67,9 +71,10 @@ export default function profilePage() {
             ))}
             <br></br>
           </ul>
+          {session?.user.id === user._id? 
           <StyledButton className='create-new'>
             <Link  href="/offer">create new</Link> 
-          </StyledButton>
+          </StyledButton> : null}
           </StyledCard>
       </>
     )

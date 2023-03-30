@@ -13,6 +13,10 @@ export const GlobalStyle = createGlobalStyle`
 		font-family: Arial, Helvetica, sans-serif;
 	}
 
+	textarea {
+		font-family: inherit;
+	}
+
 	body {
 		margin: 0;
 		padding-top: 2em;
@@ -60,11 +64,15 @@ export const GlobalStyle = createGlobalStyle`
 	.map-header {
 		display: flex;
 		justify-content: center;
+		color: #f4e158;
 	}
 
 	.slogan {
 		color: #f4e158;
 		padding-top: 30px;
+		display: flex;
+		justify-content: left;
+		text-align: left;
 	}
 
 	.about-header {
@@ -80,6 +88,14 @@ export const GlobalStyle = createGlobalStyle`
 
 	.footer-link-text {
 		color: white;
+	}
+
+	.p-text-landingpage {
+		text-align: justify;
+	}
+	.about-text {
+		text-align: justify;
+
 	}
 
 `;

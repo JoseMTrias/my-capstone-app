@@ -8,12 +8,10 @@ export default function AboutPage() {
 				<meta key="description" name="description" content="About" />
 			</Head>
 			<h3 className='map-header'>About</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-				dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-				nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-				quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
-				nec, vulputate
+			<p className='about-text'>
+			The Band Seeds is a platform that connects musicians and mindliked people. Every signed up user can browse through
+			announements of all kinds of musician types, music fields and individual locations; as well as posting it's own request!
+			The Band Seeds interactive Location Map links to music venues and rehearsal rooms all around the chosen city!
 			</p>
 		</>
 	);

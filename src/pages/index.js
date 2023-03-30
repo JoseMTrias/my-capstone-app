@@ -14,10 +14,9 @@ export default function HomePage() {
 				<meta key="description" name="description" content="This is my project" />
 			</Head>
 			<h2 className='slogan'>PLUG IN<br></br> TUNE UP<br></br> ROCK OUT!</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-				dolor. Aenean massa. 
-			</p>
+			<p className='p-text-landingpage'>
+			Sign in, post your announcements and connect with musicians and mindliked people!
+The Band Seed´s  interactive Location Map leads you to music venues and rehearsal rooms all around your city!			</p>
 			<br />
 		</>
 	);

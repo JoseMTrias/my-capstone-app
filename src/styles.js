@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
 		color: white;
 		background-image: url('../aptbs_fondo1.jpg');
 		background-size: cover;
-		background-attachment: fixed;
+		/* background-attachment: fixed; */
 	}
 	
 	main {

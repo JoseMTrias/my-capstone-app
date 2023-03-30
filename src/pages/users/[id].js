@@ -11,7 +11,6 @@ export default function profilePage() {
   const [user, setUser] = useState()
   const router = useRouter()
   const {id} = router.query
-  // const [filteredAnnouncements, setFilteredAnnouncements] = useState()
 
   useEffect(() => {
     async function getAnnouncements() {
@@ -35,9 +34,11 @@ export default function profilePage() {
   useEffect(() => {
       async function getUser() {
        try {
-         const usersData = await fetch(`/api/users/${id}`)
-         const user = await usersData.json()
-         setUser(user)
+        if (id) {
+          const usersData = await fetch(`/api/users/${id}`)
+          const user = await usersData.json()
+          setUser(user)
+        }
        } catch (error) {
          console.log(error)
        }
@@ -45,19 +46,19 @@ export default function profilePage() {
      getUser()
   }, [id])
 
-  if (status === "authenticated" && user) {
+  if (user) {
     return (
       <>
         <StyledCard className='user-info'>
           <h4 className='user-info'>USER INFO</h4>
           <section className='user-email'>
           <p>{user.name} </p>
-          <p>{user.email}</p>
+          <a href={`mailto:${user.email}`} className="email-link">Contact</a>
           </section>
           <br></br>
-            <StyledButton  className='sign-out' onClick={() => signOut()}>sign out</StyledButton>
+          {session?.user.id === user._id? 
+          <StyledButton  className='sign-out' onClick={() => signOut()}>sign out</StyledButton> : null}
             </StyledCard>
-          <br></br>
           <StyledCard>
           <h4>USER ANNOUNCEMENTS</h4>
           <ul className='user-announcements-ul'>
@@ -68,9 +69,10 @@ export default function profilePage() {
             ))}
             <br></br>
           </ul>
+          {session?.user.id === user._id? 
           <StyledButton className='create-new'>
             <Link  href="/offer">create new</Link> 
-          </StyledButton>
+          </StyledButton> : null}
           </StyledCard>
       </>
     )

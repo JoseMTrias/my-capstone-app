@@ -7,7 +7,7 @@ export const Dropdown = styled.ul `
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: none;
 
   /* main LI */
   & > li {
@@ -15,13 +15,13 @@ export const Dropdown = styled.ul `
 
     & > a {
       display: inline-block;
-      color: black;
+      color: white;
       text-align: center;
       padding: 0.1px 6px;
       text-decoration: none;
 
       &:hover {
-        background-color: white;
+        background-color: none;
       }
     }
   }
@@ -33,26 +33,26 @@ export const Dropdown = styled.ul `
       padding-bottom: 15px;
 
 
-
       & > .dropdown-content {
         display: none;
         position: absolute;
         background-color: white;
-        min-width: 80px;
+        width: 0px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
 
-
         & > a {
-          color: black;
-          padding: 4px 4px;
+          color: white;
+          padding: 3px 3px;
           text-decoration: none;
           display: block;
           text-align: left;
-          background-color: #f4e158;
+          /* background-color: #f4e158; */
+          opacity: 95%;
+
 
           &:hover {
-            background-color: white;
+            background-color: none;
           }
         }
       }

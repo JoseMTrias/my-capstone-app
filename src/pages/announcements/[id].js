@@ -26,7 +26,8 @@ export default function AnnouncementDetailPage() {
 		await fetch(`/api/announcements/${id}`, {
 			method: 'DELETE',
 		});
-		router.push('/');
+		alert("Announcement succesfully deleted!")
+		router.push(`/users/${announcementDetail.userId}`);
 	}
 
 	if(!announcementDetail) {
@@ -34,8 +35,8 @@ export default function AnnouncementDetailPage() {
 	}
 
 	return (
-		<div>
-			<h4>Announcement Profile</h4>
+		<div >
+			<h3 className='ad-profile-header'>Announcement Profile</h3>
 			<Card
 				id={announcementDetail._id}
 				date={announcementDetail.date}
@@ -51,7 +52,6 @@ export default function AnnouncementDetailPage() {
 				session={session}
 			></Card>
 			{showForm && <EditForm announcement={announcementDetail} />}
-			<br></br>
 			<br></br>
 		</div>
 	);

@@ -22,22 +22,29 @@ export default function Form() {
 
 		const response = await fetch('/api/announcements');
 		const allAnnouncements = await response.json();
-		setAnnouncements(allAnnouncements);
+		const sortedAnnouncements = allAnnouncements.sort(function (a, b) {
+			return (a.createdAt > b.createdAt) ? -1 : ((a.createdAt < b.createdAt) ? 1 : 0);
+		  });
+		setAnnouncements(sortedAnnouncements);
 	};
+
+	
+
 	return (
 		<>
 			<StyledForm onSubmit={handleSubmit} className="search-form" action="/result" method="post">
-				<label htmlFor="instrument">Instrument:</label>
+				<label htmlFor="instrument">INSTRUMENT</label>
 				<select className="select" id="instrument" name="instrument" >
-					<option value="All">All</option>
+					<option disabled selected value> -- select an option -- </option>
 					<option value="Guitar">Guitar</option>
 					<option value="Bass">Bass</option>
 					<option value="Drums">Drums</option>
 					<option value="Vocals">Vocals</option>
 				</select>
-				<label htmlFor="genre">Genre:</label>
+				<br></br>
+				<label htmlFor="genre">GENRE</label>
 				<select className="select" id="genre" name="genre">
-					<option value="All">All</option>
+					<option disabled selected value> -- select an option -- </option>
 					<option value="Rock">Rock</option>
 					<option value="Shoegaze">Shoegaze</option>
 					<option value="Pop">Pop</option>
@@ -46,8 +53,14 @@ export default function Form() {
 					<option value="Electronic">Electronic</option>
 					<option value="Classical">Classical</option>
 				</select>
-				<label htmlFor="Location">Location:</label>
-				<input className="select" type="text" id="location" name="location" placeholder='Enter City'></input>
+				<br></br>
+				<label htmlFor="Location">LOCATION</label>
+				<select className="select" id="location" name="location">
+					<option disabled selected value> -- select an option -- </option>
+					<option value="Berlin">Berlin</option>
+				</select>
+				<br></br>
+
 				<StyledButton type="submit" className="search-button">search</StyledButton>
 			</StyledForm>
 			{announcements.map(announcement => {
@@ -65,11 +78,12 @@ export default function Form() {
 					);
 				}
 			})}
-			{formInfo.instrument === 'All' &&
+			{/* {formInfo.instrument === 'All' &&
 				formInfo.genre === 'All' &&
 				announcements.map(announcement => {
 					{
 						return (
+							
 							<Board
 								key={announcement._id}
 								title={announcement.title}
@@ -77,7 +91,7 @@ export default function Form() {
 							></Board>
 						);
 					}
-				})}
+				})} */}
 		</>
 	);
 }

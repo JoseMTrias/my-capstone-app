@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import LogoApp from "../../../public/logofinal.png"
+import LogoApp from "../../../public/logo.png"
 import Image from 'next/image';
 import Dropdown from '../Dropdown/Dropdown';
 import StyledHeader from './styled';
@@ -17,14 +17,13 @@ export default function Header() {
       				<div className="dropdown-content">
         				<a href="/search">SEARCH</a>
 						<a href="/map">LOCATIONS</a>
-
        					<a href="/about">ABOUT</a>
       				</div>
     			</li>
 			</Dropdown>
-				<Link href="/" >
-					<Image alt='The Band Seeds Logo' className='header-logo' src={LogoApp} height="75px" width="150px"/>
-				</Link>
+			<Link href="/" >
+				<Image alt='The Band Seeds Logo' className='header-logo' src={LogoApp} height="40px" width="150px"/>
+			</Link>
 		</StyledHeader>
 	);
 }

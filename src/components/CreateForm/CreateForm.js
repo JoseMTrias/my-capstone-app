@@ -43,19 +43,37 @@ export default function CreateForm() {
 	return (
 		<>
 			<StyledCreateForm onSubmit={handleSubmit}>
-				<label>Title:</label>
+				<label>TITLE</label>
 				<input type="text" name="title" />
 				<br></br>
-				<label>Instrument:</label>
-				<input type="text" name="instrument" />
+				<label>INSTRUMENT</label>
+				<select className="select" id="instrument" name="instrument" >
+					<option disabled selected value> -- select an option -- </option>
+					<option value="Guitar">Guitar</option>
+					<option value="Bass">Bass</option>
+					<option value="Drums">Drums</option>
+					<option value="Vocals">Vocals</option>
+				</select>
 				<br></br>
-				<label>Genre:</label>
-				<input type="text" name="genre" />
+				<label>GENRE</label>
+				<select className="select" id="genre" name="genre">
+					<option disabled selected value> -- select an option -- </option>
+					<option value="Rock">Rock</option>
+					<option value="Shoegaze">Shoegaze</option>
+					<option value="Pop">Pop</option>
+					<option value="Jazz">Jazz</option>
+					<option value="Funk">Funk</option>
+					<option value="Electronic">Electronic</option>
+					<option value="Classical">Classical</option>
+				</select>
 				<br></br>
-				<label>Location:</label>
-				<input type="text" name="location" />
+				<label>LOCATION</label>
+				<select className="select" id="location" name="location">
+					<option disabled selected value> -- select an option -- </option>
+					<option value="Berlin">Berlin</option>
+				</select>
 				<br></br>
-				<label>Description:</label>
+				<label>DESCRIPTION</label>
 				<textarea className='text-area' type="text" name="description"></textarea>
 				<br></br>
 				<StyledButton className='button-create' type="submit" value="Create">create</StyledButton>

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
-	padding: 0.5em 1em;
-	background-color: white;
+	padding: 8px 10px;
+	/* background-color: white; */
 	display: flex;
 	font-size: 1em;
 	justify-content: space-between;
@@ -37,9 +37,13 @@ const StyledHeader = styled.header`
 	div {
 		width: 22px;
 		height: 3px;
-		background-color: #303030;
+		background-color: white;
 		margin: 4px 0;
 		border-radius: 2px;
+	}
+
+	.header-logo {
+		border: 2px solid red
 	}
 `;
 

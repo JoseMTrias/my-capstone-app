@@ -11,7 +11,10 @@ const announcementSchema = new Schema({
 	user: {type: String},
 	description: {type: String},
 	userId: {type: String}
-});
+}, {
+	// this second object adds extra properties: `createdAt` and `updatedAt`
+	timestamps: true,
+  });
 
 const Announcement = mongoose.models.Announce || mongoose.model('Announce', announcementSchema);
 

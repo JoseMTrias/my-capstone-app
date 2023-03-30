@@ -74,22 +74,8 @@ export default function Form() {
 							id={announcement._id}
 						></Board>
 					);
-				}
+				} 
 			})}
-			{/* {formInfo.instrument === 'All' &&
-				formInfo.genre === 'All' &&
-				announcements.map(announcement => {
-					{
-						return (
-							
-							<Board
-								key={announcement._id}
-								title={announcement.title}
-								id={announcement._id}
-							></Board>
-						);
-					}
-				})} */}
 		</>
 	);
 }

@@ -29,12 +29,8 @@ export default function EditForm({announcement}) {
 			console.error(`Error: ${response.status}`);
 		}
 	}
-
-	if(!response) {
-		return <p>Loading...</p>
-	}
-	else {
-		return (
+	
+	return (
 			<>
 				<StyledEditForm onSubmit={handleEdit}>
 					<label>TITLE</label>
@@ -58,14 +54,6 @@ export default function EditForm({announcement}) {
 						<option value="Drums">Drums</option>
 						<option value="Vocals">Vocals</option>
 					</select>
-					{/* <input
-						onChange={e =>
-							setEditAnnouncement({...editAnnouncement, instrument: e.target.value})
-						}
-						value={editAnnouncement.instrument}
-						type="text"
-						name="instrument"
-					/> */}
 					<br></br>
 					<label>GENRE</label>
 					<select className="select" id="genre" name="genre" onChange={e =>
@@ -81,14 +69,6 @@ export default function EditForm({announcement}) {
 						<option value="Electronic">Electronic</option>
 						<option value="Classical">Classical</option>
 					</select>
-					{/* <input
-						onChange={e =>
-							setEditAnnouncement({...editAnnouncement, genre: e.target.value})
-						}
-						value={editAnnouncement.genre}
-						type="text"
-						name="genre"
-					/> */}
 					<br></br>
 					<label>LOCATION</label>
 					<select className="select" id="genre" name="genre" onChange={e =>
@@ -98,14 +78,6 @@ export default function EditForm({announcement}) {
 						<option disabled selected value> -- select an option -- </option>
 						<option value="Berlin">Berlin</option>
 					</select>
-						{/* <input
-							onChange={e =>
-								setEditAnnouncement({...editAnnouncement, location: e.target.value})
-							}
-							value={editAnnouncement.location}
-							type="text"
-							name="location"
-						/> */}
 					<br></br>
 					<label>DESCRIPTION</label>
 					<textarea className='text-area'
@@ -121,7 +93,4 @@ export default function EditForm({announcement}) {
 				</StyledEditForm>
 			</>
 		);
-	}
-
-	
 }
